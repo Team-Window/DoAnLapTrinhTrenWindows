@@ -35,22 +35,22 @@
             this.lbl_LoaiXe = new System.Windows.Forms.Label();
             this.lbl_HieuXe = new System.Windows.Forms.Label();
             this.lbl_HinhAnh = new System.Windows.Forms.Label();
-            this.lbl_GioVaoBen = new System.Windows.Forms.Label();
-            this.lbl_NgayVaoBen = new System.Windows.Forms.Label();
             this.txb_HieuXe = new System.Windows.Forms.TextBox();
             this.cb_LoaiXe = new System.Windows.Forms.ComboBox();
-            this.dtp_GioVaoBen = new System.Windows.Forms.DateTimePicker();
-            this.dtp_NgayVaoBen = new System.Windows.Forms.DateTimePicker();
-            this.btn_Them = new System.Windows.Forms.Button();
+            this.btn_VaoBen = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.dtgv_XeGui = new System.Windows.Forms.DataGridView();
-            this.ptb_HinhAnh = new System.Windows.Forms.PictureBox();
             this.lbl_Search = new System.Windows.Forms.Label();
             this.txb_Search = new System.Windows.Forms.TextBox();
             this.btn_Search = new System.Windows.Forms.Button();
             this.btn_Reset = new System.Windows.Forms.Button();
             this.btn_Upload = new System.Windows.Forms.Button();
+            this.btn_Download = new System.Windows.Forms.Button();
+            this.ptb_HinhAnh = new System.Windows.Forms.PictureBox();
+            this.btn_ThongKe = new System.Windows.Forms.Button();
+            this.lbl_LoaiVe = new System.Windows.Forms.Label();
+            this.cb_LoaiVe = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_XeGui)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_HinhAnh)).BeginInit();
             this.SuspendLayout();
@@ -114,24 +114,6 @@
             this.lbl_HinhAnh.TabIndex = 6;
             this.lbl_HinhAnh.Text = "Hình ảnh:";
             // 
-            // lbl_GioVaoBen
-            // 
-            this.lbl_GioVaoBen.AutoSize = true;
-            this.lbl_GioVaoBen.Location = new System.Drawing.Point(12, 351);
-            this.lbl_GioVaoBen.Name = "lbl_GioVaoBen";
-            this.lbl_GioVaoBen.Size = new System.Drawing.Size(68, 13);
-            this.lbl_GioVaoBen.TabIndex = 7;
-            this.lbl_GioVaoBen.Text = "Giờ vào bến:";
-            // 
-            // lbl_NgayVaoBen
-            // 
-            this.lbl_NgayVaoBen.AutoSize = true;
-            this.lbl_NgayVaoBen.Location = new System.Drawing.Point(12, 377);
-            this.lbl_NgayVaoBen.Name = "lbl_NgayVaoBen";
-            this.lbl_NgayVaoBen.Size = new System.Drawing.Size(80, 13);
-            this.lbl_NgayVaoBen.TabIndex = 8;
-            this.lbl_NgayVaoBen.Text = "Ngày vào bến: ";
-            // 
             // txb_HieuXe
             // 
             this.txb_HieuXe.Location = new System.Drawing.Point(107, 152);
@@ -151,34 +133,19 @@
             this.cb_LoaiXe.Size = new System.Drawing.Size(121, 21);
             this.cb_LoaiXe.TabIndex = 11;
             // 
-            // dtp_GioVaoBen
+            // btn_VaoBen
             // 
-            this.dtp_GioVaoBen.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtp_GioVaoBen.Location = new System.Drawing.Point(107, 351);
-            this.dtp_GioVaoBen.Name = "dtp_GioVaoBen";
-            this.dtp_GioVaoBen.Size = new System.Drawing.Size(98, 20);
-            this.dtp_GioVaoBen.TabIndex = 12;
-            // 
-            // dtp_NgayVaoBen
-            // 
-            this.dtp_NgayVaoBen.Location = new System.Drawing.Point(107, 377);
-            this.dtp_NgayVaoBen.Name = "dtp_NgayVaoBen";
-            this.dtp_NgayVaoBen.Size = new System.Drawing.Size(200, 20);
-            this.dtp_NgayVaoBen.TabIndex = 13;
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.Location = new System.Drawing.Point(132, 421);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(106, 43);
-            this.btn_Them.TabIndex = 15;
-            this.btn_Them.Text = "Thêm";
-            this.btn_Them.UseVisualStyleBackColor = true;
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            this.btn_VaoBen.Location = new System.Drawing.Point(132, 421);
+            this.btn_VaoBen.Name = "btn_VaoBen";
+            this.btn_VaoBen.Size = new System.Drawing.Size(106, 43);
+            this.btn_VaoBen.TabIndex = 15;
+            this.btn_VaoBen.Text = "Vào Bến";
+            this.btn_VaoBen.UseVisualStyleBackColor = true;
+            this.btn_VaoBen.Click += new System.EventHandler(this.btn_VaoBen_Click);
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.Location = new System.Drawing.Point(254, 421);
+            this.btn_Xoa.Location = new System.Drawing.Point(244, 421);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(105, 43);
             this.btn_Xoa.TabIndex = 16;
@@ -187,12 +154,13 @@
             // 
             // btn_Sua
             // 
-            this.btn_Sua.Location = new System.Drawing.Point(365, 421);
+            this.btn_Sua.Location = new System.Drawing.Point(358, 421);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(95, 43);
             this.btn_Sua.TabIndex = 17;
-            this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.Text = "Chỉnh sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // dtgv_XeGui
             // 
@@ -201,15 +169,7 @@
             this.dtgv_XeGui.Name = "dtgv_XeGui";
             this.dtgv_XeGui.Size = new System.Drawing.Size(490, 291);
             this.dtgv_XeGui.TabIndex = 18;
-            // 
-            // ptb_HinhAnh
-            // 
-            this.ptb_HinhAnh.Location = new System.Drawing.Point(107, 187);
-            this.ptb_HinhAnh.Name = "ptb_HinhAnh";
-            this.ptb_HinhAnh.Size = new System.Drawing.Size(200, 134);
-            this.ptb_HinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_HinhAnh.TabIndex = 14;
-            this.ptb_HinhAnh.TabStop = false;
+            this.dtgv_XeGui.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_XeGui_CellDoubleClick);
             // 
             // lbl_Search
             // 
@@ -245,22 +205,76 @@
             this.btn_Reset.TabIndex = 22;
             this.btn_Reset.Text = "Tạo mới";
             this.btn_Reset.UseVisualStyleBackColor = true;
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // btn_Upload
             // 
-            this.btn_Upload.Location = new System.Drawing.Point(107, 322);
+            this.btn_Upload.Location = new System.Drawing.Point(118, 344);
             this.btn_Upload.Name = "btn_Upload";
-            this.btn_Upload.Size = new System.Drawing.Size(75, 23);
+            this.btn_Upload.Size = new System.Drawing.Size(97, 23);
             this.btn_Upload.TabIndex = 23;
             this.btn_Upload.Text = "Upload";
             this.btn_Upload.UseVisualStyleBackColor = true;
             this.btn_Upload.Click += new System.EventHandler(this.btn_Upload_Click);
+            // 
+            // btn_Download
+            // 
+            this.btn_Download.Location = new System.Drawing.Point(221, 344);
+            this.btn_Download.Name = "btn_Download";
+            this.btn_Download.Size = new System.Drawing.Size(97, 23);
+            this.btn_Download.TabIndex = 24;
+            this.btn_Download.Text = "Download";
+            this.btn_Download.UseVisualStyleBackColor = true;
+            this.btn_Download.Click += new System.EventHandler(this.btn_Download_Click);
+            // 
+            // ptb_HinhAnh
+            // 
+            this.ptb_HinhAnh.Location = new System.Drawing.Point(107, 187);
+            this.ptb_HinhAnh.Name = "ptb_HinhAnh";
+            this.ptb_HinhAnh.Size = new System.Drawing.Size(221, 151);
+            this.ptb_HinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_HinhAnh.TabIndex = 14;
+            this.ptb_HinhAnh.TabStop = false;
+            // 
+            // btn_ThongKe
+            // 
+            this.btn_ThongKe.Location = new System.Drawing.Point(579, 421);
+            this.btn_ThongKe.Name = "btn_ThongKe";
+            this.btn_ThongKe.Size = new System.Drawing.Size(95, 43);
+            this.btn_ThongKe.TabIndex = 25;
+            this.btn_ThongKe.Text = "Thống kê";
+            this.btn_ThongKe.UseVisualStyleBackColor = true;
+            // 
+            // lbl_LoaiVe
+            // 
+            this.lbl_LoaiVe.AutoSize = true;
+            this.lbl_LoaiVe.Location = new System.Drawing.Point(12, 382);
+            this.lbl_LoaiVe.Name = "lbl_LoaiVe";
+            this.lbl_LoaiVe.Size = new System.Drawing.Size(45, 13);
+            this.lbl_LoaiVe.TabIndex = 26;
+            this.lbl_LoaiVe.Text = "Loại vé:";
+            // 
+            // cb_LoaiVe
+            // 
+            this.cb_LoaiVe.FormattingEnabled = true;
+            this.cb_LoaiVe.Items.AddRange(new object[] {
+            "Vé giờ",
+            "Vé tuần",
+            "Vé tháng"});
+            this.cb_LoaiVe.Location = new System.Drawing.Point(107, 382);
+            this.cb_LoaiVe.Name = "cb_LoaiVe";
+            this.cb_LoaiVe.Size = new System.Drawing.Size(121, 21);
+            this.cb_LoaiVe.TabIndex = 27;
             // 
             // frmGuiXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(845, 467);
+            this.Controls.Add(this.cb_LoaiVe);
+            this.Controls.Add(this.lbl_LoaiVe);
+            this.Controls.Add(this.btn_ThongKe);
+            this.Controls.Add(this.btn_Download);
             this.Controls.Add(this.btn_Upload);
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_Search);
@@ -269,14 +283,10 @@
             this.Controls.Add(this.dtgv_XeGui);
             this.Controls.Add(this.btn_Sua);
             this.Controls.Add(this.btn_Xoa);
-            this.Controls.Add(this.btn_Them);
+            this.Controls.Add(this.btn_VaoBen);
             this.Controls.Add(this.ptb_HinhAnh);
-            this.Controls.Add(this.dtp_NgayVaoBen);
-            this.Controls.Add(this.dtp_GioVaoBen);
             this.Controls.Add(this.cb_LoaiXe);
             this.Controls.Add(this.txb_HieuXe);
-            this.Controls.Add(this.lbl_NgayVaoBen);
-            this.Controls.Add(this.lbl_GioVaoBen);
             this.Controls.Add(this.lbl_HinhAnh);
             this.Controls.Add(this.lbl_HieuXe);
             this.Controls.Add(this.lbl_LoaiXe);
@@ -303,14 +313,9 @@
         private System.Windows.Forms.Label lbl_LoaiXe;
         private System.Windows.Forms.Label lbl_HieuXe;
         private System.Windows.Forms.Label lbl_HinhAnh;
-        private System.Windows.Forms.Label lbl_GioVaoBen;
-        private System.Windows.Forms.Label lbl_NgayVaoBen;
         private System.Windows.Forms.TextBox txb_HieuXe;
-        private System.Windows.Forms.ComboBox cb_LoaiXe;
-        private System.Windows.Forms.DateTimePicker dtp_GioVaoBen;
-        private System.Windows.Forms.DateTimePicker dtp_NgayVaoBen;
         private System.Windows.Forms.PictureBox ptb_HinhAnh;
-        private System.Windows.Forms.Button btn_Them;
+        private System.Windows.Forms.Button btn_VaoBen;
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_Sua;
         private System.Windows.Forms.DataGridView dtgv_XeGui;
@@ -319,5 +324,10 @@
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.Button btn_Upload;
+        private System.Windows.Forms.Button btn_Download;
+        private System.Windows.Forms.Button btn_ThongKe;
+        private System.Windows.Forms.Label lbl_LoaiVe;
+        private System.Windows.Forms.ComboBox cb_LoaiVe;
+        public System.Windows.Forms.ComboBox cb_LoaiXe;
     }
 }

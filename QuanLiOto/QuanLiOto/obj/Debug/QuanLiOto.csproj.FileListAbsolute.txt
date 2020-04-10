@@ -9,6 +9,7 @@ D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\Qua
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.exe
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.pdb
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmGuiXe.resources
+<<<<<<< HEAD
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\bin\Debug\QuanLiOto.exe.config
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\bin\Debug\QuanLiOto.exe
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\bin\Debug\QuanLiOto.pdb
@@ -20,3 +21,7 @@ E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanL
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.csproj.CoreCompileInputs.cache
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.exe
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.pdb
+=======
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmChinhSuaDanhSachXeGui.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmThongKe.resources
+>>>>>>> dff3b257297457859a264efab9b3694d83e06a1b
