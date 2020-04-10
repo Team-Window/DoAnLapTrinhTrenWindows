@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmChinhSuaDanhSachXeGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChinhSuaDanhSachXeGui.Designer.cs">
+      <DependentUpon>frmChinhSuaDanhSachXeGui.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGuiXe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGuiXe.Designer.cs">
       <DependentUpon>frmGuiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiXe.cs" />
     <Compile Include="MainForm.cs">
@@ -63,8 +75,14 @@
     <Compile Include="My_DB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmChinhSuaDanhSachXeGui.resx">
+      <DependentUpon>frmChinhSuaDanhSachXeGui.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGuiXe.resx">
       <DependentUpon>frmGuiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

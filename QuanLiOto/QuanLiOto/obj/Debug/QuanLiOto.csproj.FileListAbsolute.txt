@@ -9,3 +9,5 @@ D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\Qua
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.exe
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.pdb
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmGuiXe.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmChinhSuaDanhSachXeGui.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmThongKe.resources
