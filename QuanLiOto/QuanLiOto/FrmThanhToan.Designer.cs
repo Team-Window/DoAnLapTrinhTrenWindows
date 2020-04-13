@@ -51,8 +51,6 @@
             this.bt_CheckOut = new System.Windows.Forms.Button();
             this.lb_ThanhToan = new System.Windows.Forms.Label();
             this.txt_ThanhTien = new System.Windows.Forms.TextBox();
-            this.bt_Huy = new System.Windows.Forms.Button();
-            this.bt_ThanhToan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_HinhAnh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -280,33 +278,11 @@
             this.txt_ThanhTien.Size = new System.Drawing.Size(185, 27);
             this.txt_ThanhTien.TabIndex = 64;
             // 
-            // bt_Huy
-            // 
-            this.bt_Huy.Location = new System.Drawing.Point(445, 555);
-            this.bt_Huy.Name = "bt_Huy";
-            this.bt_Huy.Size = new System.Drawing.Size(136, 34);
-            this.bt_Huy.TabIndex = 65;
-            this.bt_Huy.Text = "HUỶ";
-            this.bt_Huy.UseVisualStyleBackColor = true;
-            this.bt_Huy.Click += new System.EventHandler(this.bt_Huy_Click);
-            // 
-            // bt_ThanhToan
-            // 
-            this.bt_ThanhToan.Location = new System.Drawing.Point(631, 555);
-            this.bt_ThanhToan.Name = "bt_ThanhToan";
-            this.bt_ThanhToan.Size = new System.Drawing.Size(180, 34);
-            this.bt_ThanhToan.TabIndex = 65;
-            this.bt_ThanhToan.Text = "THANH TOÁN";
-            this.bt_ThanhToan.UseVisualStyleBackColor = true;
-            this.bt_ThanhToan.Click += new System.EventHandler(this.bt_ThanhToan_Click);
-            // 
             // FrmThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1330, 664);
-            this.Controls.Add(this.bt_ThanhToan);
-            this.Controls.Add(this.bt_Huy);
             this.Controls.Add(this.txt_ThanhTien);
             this.Controls.Add(this.lb_ThanhToan);
             this.Controls.Add(this.bt_CheckOut);
@@ -364,7 +340,5 @@
         private System.Windows.Forms.Button bt_CheckOut;
         private System.Windows.Forms.Label lb_ThanhToan;
         private System.Windows.Forms.TextBox txt_ThanhTien;
-        private System.Windows.Forms.Button bt_Huy;
-        private System.Windows.Forms.Button bt_ThanhToan;
     }
 }
