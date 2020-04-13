@@ -4,7 +4,6 @@ E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\bin\Debug\QuanL
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmChinhSuaDanhSachXeGui.resources
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmGuiXe.resources
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmThanhToan.resources
-E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmThongKe.resources
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.MainForm.resources
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.Properties.Resources.resources
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.csproj.GenerateResource.cache
