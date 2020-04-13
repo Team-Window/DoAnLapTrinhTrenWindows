@@ -63,30 +63,34 @@ namespace QuanLiOto
             MemoryStream hinhanh = new MemoryStream();
             if (cb_LoaiXe.SelectedIndex == 0)
             {
-                loaixe = "Xe đạp";
+                loaixe = "Xe dap";
             }
             else if (cb_LoaiXe.SelectedIndex == 1)
             {
-                loaixe = "Xe máy";
+                loaixe = "Xe may";
             }
             else
             {
-                loaixe = "Xe hơi";
+                loaixe = "Xe hoi";
             }
             TimeSpan giovaoben = DateTime.Now.TimeOfDay;
             DateTime ngayvaoben = DateTime.Now.Date;
             string loaive;
             if (cb_LoaiVe.SelectedIndex == 0)
             {
-                loaive = "Vé giờ";
+                loaive = "Ve gio";
             }
             else if (cb_LoaiVe.SelectedIndex == 1)
             {
-                loaive = "Vé tuần";
+                loaive = "Ve ngay";
+            }
+            else if (cb_LoaiVe.SelectedIndex == 2)
+            {
+                loaive = "Ve tuan";
             }
             else
             {
-                loaive = "Vé tháng";
+                loaive = "Ve thang";
             }
             if (verif())
             {
@@ -144,9 +148,9 @@ namespace QuanLiOto
             frmChinhSuaDanhSachXeGui frmChinhSua = new frmChinhSuaDanhSachXeGui();
             frmChinhSua.txb_MaVe.Text = dtgv_XeGui.CurrentRow.Cells[0].Value.ToString();
             frmChinhSua.txb_BienSo.Text = dtgv_XeGui.CurrentRow.Cells[1].Value.ToString();
-            if (dtgv_XeGui.CurrentRow.Cells[2].Value.ToString() == "Xe đạp")
+            if (dtgv_XeGui.CurrentRow.Cells[2].Value.ToString() == "Xe dap")
                 frmChinhSua.cb_LoaiXe.SelectedIndex = 0;
-            else if (dtgv_XeGui.CurrentRow.Cells[2].Value.ToString() == "Xe máy")
+            else if (dtgv_XeGui.CurrentRow.Cells[2].Value.ToString() == "Xe may")
                 frmChinhSua.cb_LoaiXe.SelectedIndex = 1;
             else
                 frmChinhSua.cb_LoaiXe.SelectedIndex = 2;
@@ -161,9 +165,10 @@ namespace QuanLiOto
                 frmChinhSua.cb_LoaiVe.SelectedIndex = 0;
             else if (dtgv_XeGui.CurrentRow.Cells[7].Value.ToString() == "Ve ngay")
                 frmChinhSua.cb_LoaiVe.SelectedIndex = 1;
-            else
+            else if(dtgv_XeGui.CurrentRow.Cells[7].Value.ToString() == "Ve tuan")
                 frmChinhSua.cb_LoaiVe.SelectedIndex = 2;
-            
+            else
+                frmChinhSua.cb_LoaiVe.SelectedIndex = 3;
             frmChinhSua.ShowDialog(this);
         }
 

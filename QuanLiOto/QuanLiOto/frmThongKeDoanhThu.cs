@@ -29,14 +29,13 @@ namespace QuanLiOto
             // TODO: This line of code loads data into the 'doAnLapTrinhTrenWIndowsDataSet.ThongKe' table. You can move, or remove it, as needed.
             this.thongKeTableAdapter.Fill(this.doAnLapTrinhTrenWIndowsDataSet.ThongKe);
             SqlCommand command = new SqlCommand("SELECT * FROM ThongKe");
-            DataGridView1.ReadOnly = true;
-            // xu ly hinh anh, code co tham khao msdn
-            DataGridViewImageColumn picCol = new DataGridViewImageColumn(); // doi tuong lam viec voi dang picture cua datagridview
-            DataGridView1.RowTemplate.Height = 80; // dong nay tham khao tren MSDN ngay 10/03/2019,co gian de pic dep, dang tim auto-size
-            DataGridView1.DataSource = guixe.getGuiXe(command);
-            picCol = (DataGridViewImageColumn)DataGridView1.Columns[4];
+            dataGridView1.ReadOnly = true;
+            DataGridViewImageColumn picCol = new DataGridViewImageColumn();
+            dataGridView1.RowTemplate.Height = 80;
+            dataGridView1.DataSource = guixe.getGuiXe(command);
+            picCol = (DataGridViewImageColumn)dataGridView1.Columns[4];
             picCol.ImageLayout = DataGridViewImageCellLayout.Stretch;
-            DataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         private void ButtonCheck_Click(object sender, EventArgs e)
@@ -65,9 +64,9 @@ namespace QuanLiOto
                 else
                 {
                     query = "SELECT * FROM ThongKe WHERE ngayraben='date1'";
-                for (int i = 0; i < DataGridView1.Rows.Count; i++)
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 {
-                    tongsotien += int.Parse(DataGridView1.Rows[i].Cells[9].Value.ToString());
+                    tongsotien += int.Parse(dataGridView1.Rows[i].Cells[9].Value.ToString());
                 }
             }
                 command = new SqlCommand(query);
@@ -76,19 +75,19 @@ namespace QuanLiOto
         }
     public void fillGrid(SqlCommand command)
     {
-        DataGridView1.ReadOnly = true;// nap lai du lieu len datagrid view
+        dataGridView1.ReadOnly = true;// nap lai du lieu len datagrid view
 
         DataGridViewImageColumn picCol = new DataGridViewImageColumn();
 
-        DataGridView1.RowTemplate.Height = 80;
+        dataGridView1.RowTemplate.Height = 80;
 
-        DataGridView1.DataSource = guixe.getGuiXe(command);
+        dataGridView1.DataSource = guixe.getGuiXe(command);
 
-        picCol = (DataGridViewImageColumn)DataGridView1.Columns[7];
+        picCol = (DataGridViewImageColumn)dataGridView1.Columns[4];
 
         picCol.ImageLayout = DataGridViewImageCellLayout.Stretch;
 
-        DataGridView1.AllowUserToAddRows = false; // dong nay tren stackoverflo
+        dataGridView1.AllowUserToAddRows = false; // dong nay tren stackoverflo
 
     }
 }

@@ -45,8 +45,10 @@ namespace QuanLiOto
                     cb_LoaiVe.SelectedIndex = 0;
                 else if (table.Rows[0]["loaive"].ToString() == "Ve ngay")
                     cb_LoaiVe.SelectedIndex = 1;
-                else
+                else if (table.Rows[0]["loaive"].ToString() == "Ve tuan")
                     cb_LoaiVe.SelectedIndex = 2;
+                else
+                    cb_LoaiVe.SelectedIndex = 3;
             }
             else
             {
@@ -81,6 +83,10 @@ namespace QuanLiOto
                 loaive = "Ve gio";
             }
             else if (cb_LoaiVe.SelectedIndex == 1)
+            {
+                loaive = "Ve ngay";
+            }
+            else if (cb_LoaiVe.SelectedIndex == 2)
             {
                 loaive = "Ve tuan";
             }
@@ -189,17 +195,58 @@ namespace QuanLiOto
 
         private void BtThanhToan_Click(object sender, EventArgs e)
         {
+            /*
             FrmThanhToan frmThanhToan = new FrmThanhToan();
             frmThanhToan.lb_ValueMaVe.Text = txb_MaVe.Text;
             frmThanhToan.lb_ValueBienSo.Text = txb_BienSo.Text;
             frmThanhToan.lb_ValueHieuXe.Text = txb_HieuXe.Text;
             frmThanhToan.lb_ValueLoaiVe.Text = cb_LoaiVe.Text;
             frmThanhToan.lb_ValueLoaiXe.Text = cb_LoaiXe.Text;
-            frmThanhToan.ptb_HinhAnh.Image = ptb_HinhAnh.Image;
+            //byte[] pic = (byte[])table.Rows[0]["hinhanh"];
+            //MemoryStream picture = new MemoryStream(pic);
+            ptb_HinhAnh.Image = Image.FromStream(picture);
+            //  MemoryStream hinhanh = new MemoryStream();
+            /// ptb_HinhAnh.Image.Save(frmThanhToan.ptb_HinhAnh, ptb_HinhAnh.Image.RawFormat);
+            //frmThanhToan.ptb_HinhAnh.Image = hinhanh;
             frmThanhToan.dtp_GioVaoBen.Value = dtp_GioVaoBen.Value;
             frmThanhToan.dtp_NgayVaoBen.Value = dtp_NgayVaoBen.Value;
             frmThanhToan.ShowDialog(this);
-            
+            */
+            FrmThanhToan frmThanhToan = new FrmThanhToan();
+            GuiXe guixe = new GuiXe();
+            int mave = int.Parse(txb_MaVe.Text);
+            SqlCommand command = new SqlCommand("SELECT mave, bienso, loaixe, hieuxe, hinhanh, giovaoben, ngayvaoben, loaive FROM GuiXe WHERE mave= " + mave);
+            DataTable table = guixe.getGuiXe(command);
+            if (table.Rows.Count > 0)
+            {
+                frmThanhToan.lb_ValueMaVe.Text = txb_MaVe.Text;
+                frmThanhToan.lb_ValueBienSo.Text = table.Rows[0]["bienso"].ToString();
+                if (table.Rows[0]["loaixe"].ToString() == "Xe dap")
+                    frmThanhToan.lb_ValueLoaiXe.Text = "Xe đạp";
+                else if (table.Rows[0]["loaixe"].ToString() == "Xe may")
+                    frmThanhToan.lb_ValueLoaiXe.Text="Xe máy";
+                else
+                    frmThanhToan.lb_ValueLoaiXe.Text="Xe hơi";
+                frmThanhToan.lb_ValueHieuXe.Text = table.Rows[0]["hieuxe"].ToString();
+                byte[] pic = (byte[])table.Rows[0]["hinhanh"];
+                MemoryStream picture = new MemoryStream(pic);
+                frmThanhToan.ptb_HinhAnh.Image = Image.FromStream(picture);
+                frmThanhToan.dtp_GioVaoBen.Value = Convert.ToDateTime(table.Rows[0]["giovaoben"].ToString());
+                frmThanhToan.dtp_NgayVaoBen.Value = (DateTime)table.Rows[0]["ngayvaoben"];
+                if (table.Rows[0]["loaive"].ToString() == "Ve gio")
+                    frmThanhToan.lb_ValueLoaiVe.Text="Vé giờ";
+                else if (table.Rows[0]["loaive"].ToString() == "Ve ngay")
+                    frmThanhToan.lb_ValueLoaiVe.Text="Vé ngày";
+                else if(table.Rows[0]["loaive"].ToString() == "Ve tuan")
+                    frmThanhToan.lb_ValueLoaiVe.Text = "Vé tuần";
+                else
+                    frmThanhToan.lb_ValueLoaiVe.Text="Vé tháng";
+                frmThanhToan.ShowDialog(this);
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy", "Form Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

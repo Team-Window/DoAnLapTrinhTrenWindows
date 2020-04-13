@@ -127,7 +127,7 @@ namespace QuanLiOto
             command.Parameters.Add("@bienso", SqlDbType.VarChar).Value = bienso;
             command.Parameters.Add("@loaixe", SqlDbType.VarChar).Value = loaixe;
             command.Parameters.Add("@hieuxe", SqlDbType.VarChar).Value = hieuxe;
-            command.Parameters.Add("@hinhanh", SqlDbType.Image).Value = hinhanh;
+            command.Parameters.Add("@hinhanh", SqlDbType.Image).Value = hinhanh.ToArray();
             command.Parameters.Add("@giovaoben", SqlDbType.Time).Value = giovaoben;
             command.Parameters.Add("@ngayvaoben", SqlDbType.DateTime).Value = ngayvaoben;
             command.Parameters.Add("@loaive", SqlDbType.VarChar).Value = loaive;

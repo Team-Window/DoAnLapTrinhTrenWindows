@@ -13,3 +13,17 @@ E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanL
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.pdb
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.csprojAssemblyReference.cache
 E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmThongKeDoanhThu.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\bin\Debug\QuanLiOto.exe.config
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\bin\Debug\QuanLiOto.exe
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\bin\Debug\QuanLiOto.pdb
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.csprojAssemblyReference.cache
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmChinhSuaDanhSachXeGui.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmGuiXe.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmThanhToan.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.frmThongKeDoanhThu.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.MainForm.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.Properties.Resources.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.csproj.GenerateResource.cache
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.csproj.CoreCompileInputs.cache
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.exe
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.pdb
