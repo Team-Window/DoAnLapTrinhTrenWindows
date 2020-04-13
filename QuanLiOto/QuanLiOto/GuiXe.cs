@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -37,6 +38,10 @@ namespace QuanLiOto
                 return false;
             }
         }
+
+        
+
+        
 
         public bool UpdateGuiXe(int mave, string bienso, string loaixe, string hieuxe, MemoryStream hinhanh, TimeSpan giovaoben, DateTime ngayvaoben, string loaive)
         {
@@ -113,6 +118,33 @@ namespace QuanLiOto
         public string SoLuongXeHoi()
         {
             return execCount("SELECT COUNT (*) FROM GuiXe WHERE loaixe='Xe hoi' ");
+        }
+        public bool InsertThongKe(int mave, string bienso, string loaixe, string hieuxe, MemoryStream hinhanh, TimeSpan giovaoben, DateTime ngayvaoben, string loaive,TimeSpan gioraben,DateTime ngayraben,int tongtien)
+        {
+            SqlCommand command = new SqlCommand("INSERT INTO ThongKe (mave, bienso, loaixe, hieuxe, hinhanh, giovaoben, ngayvaoben,loaive,gioraben,ngayraben,tongtien)"
+                + "VALUES(@mave, @bienso, @loaixe, @hieuxe, @hinhanh, @giovaoben, @ngayvaoben,@loaive,@gioraben,@ngayraben,@tongtien)", mydb.getConnection);
+            command.Parameters.Add("@mave", SqlDbType.Int).Value = mave;
+            command.Parameters.Add("@bienso", SqlDbType.VarChar).Value = bienso;
+            command.Parameters.Add("@loaixe", SqlDbType.VarChar).Value = loaixe;
+            command.Parameters.Add("@hieuxe", SqlDbType.VarChar).Value = hieuxe;
+            command.Parameters.Add("@hinhanh", SqlDbType.Image).Value = hinhanh;
+            command.Parameters.Add("@giovaoben", SqlDbType.Time).Value = giovaoben;
+            command.Parameters.Add("@ngayvaoben", SqlDbType.DateTime).Value = ngayvaoben;
+            command.Parameters.Add("@loaive", SqlDbType.VarChar).Value = loaive;
+            command.Parameters.Add("@gioraben", SqlDbType.Time).Value = gioraben;
+            command.Parameters.Add("@ngayraben", SqlDbType.DateTime).Value = ngayraben;
+            command.Parameters.Add("@tongtien", SqlDbType.Int).Value = tongtien;
+            mydb.openConnection();
+            if ((command.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
         }
     }
 }

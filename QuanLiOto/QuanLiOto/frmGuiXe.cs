@@ -63,30 +63,30 @@ namespace QuanLiOto
             MemoryStream hinhanh = new MemoryStream();
             if (cb_LoaiXe.SelectedIndex == 0)
             {
-                loaixe = "Xe dap";
+                loaixe = "Xe đạp";
             }
             else if (cb_LoaiXe.SelectedIndex == 1)
             {
-                loaixe = "Xe may";
+                loaixe = "Xe máy";
             }
             else
             {
-                loaixe = "Xe hoi";
+                loaixe = "Xe hơi";
             }
             TimeSpan giovaoben = DateTime.Now.TimeOfDay;
             DateTime ngayvaoben = DateTime.Now.Date;
             string loaive;
             if (cb_LoaiVe.SelectedIndex == 0)
             {
-                loaive = "Ve gio";
+                loaive = "Vé giờ";
             }
             else if (cb_LoaiVe.SelectedIndex == 1)
             {
-                loaive = "Ve tuan";
+                loaive = "Vé tuần";
             }
             else
             {
-                loaive = "Ve thang";
+                loaive = "Vé tháng";
             }
             if (verif())
             {
@@ -144,9 +144,9 @@ namespace QuanLiOto
             frmChinhSuaDanhSachXeGui frmChinhSua = new frmChinhSuaDanhSachXeGui();
             frmChinhSua.txb_MaVe.Text = dtgv_XeGui.CurrentRow.Cells[0].Value.ToString();
             frmChinhSua.txb_BienSo.Text = dtgv_XeGui.CurrentRow.Cells[1].Value.ToString();
-            if (dtgv_XeGui.CurrentRow.Cells[2].Value.ToString() == "Xe dap")
+            if (dtgv_XeGui.CurrentRow.Cells[2].Value.ToString() == "Xe đạp")
                 frmChinhSua.cb_LoaiXe.SelectedIndex = 0;
-            else if (dtgv_XeGui.CurrentRow.Cells[2].Value.ToString() == "Xe may")
+            else if (dtgv_XeGui.CurrentRow.Cells[2].Value.ToString() == "Xe máy")
                 frmChinhSua.cb_LoaiXe.SelectedIndex = 1;
             else
                 frmChinhSua.cb_LoaiXe.SelectedIndex = 2;
@@ -158,11 +158,12 @@ namespace QuanLiOto
             frmChinhSua.dtp_GioVaoBen.Value = Convert.ToDateTime(dtgv_XeGui.CurrentRow.Cells[5].Value.ToString());
             frmChinhSua.dtp_NgayVaoBen.Value = (DateTime)dtgv_XeGui.CurrentRow.Cells[6].Value;
             if (dtgv_XeGui.CurrentRow.Cells[7].Value.ToString() == "Ve gio")
-                frmChinhSua.cb_LoaiXe.SelectedIndex = 0;
+                frmChinhSua.cb_LoaiVe.SelectedIndex = 0;
             else if (dtgv_XeGui.CurrentRow.Cells[7].Value.ToString() == "Ve ngay")
-                frmChinhSua.cb_LoaiXe.SelectedIndex = 1;
+                frmChinhSua.cb_LoaiVe.SelectedIndex = 1;
             else
-                frmChinhSua.cb_LoaiXe.SelectedIndex = 2;
+                frmChinhSua.cb_LoaiVe.SelectedIndex = 2;
+            
             frmChinhSua.ShowDialog(this);
         }
 
@@ -171,5 +172,6 @@ namespace QuanLiOto
             frmChinhSuaDanhSachXeGui frmChinhSua = new frmChinhSuaDanhSachXeGui();
             frmChinhSua.ShowDialog(this);
         }
+        
     }
 }

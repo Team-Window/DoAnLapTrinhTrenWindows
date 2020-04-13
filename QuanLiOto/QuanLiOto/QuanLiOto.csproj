@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoAnLapTrinhTrenWIndowsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmChinhSuaDanhSachXeGui.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,11 +64,23 @@
     <Compile Include="frmGuiXe.Designer.cs">
       <DependentUpon>frmGuiXe.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThanhToan.Designer.cs">
+      <DependentUpon>FrmThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmThongKe.Designer.cs">
       <DependentUpon>frmThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKeDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeDoanhThu.Designer.cs">
+      <DependentUpon>frmThongKeDoanhThu.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiXe.cs" />
     <Compile Include="MainForm.cs">
@@ -81,8 +98,14 @@
     <EmbeddedResource Include="frmGuiXe.resx">
       <DependentUpon>frmGuiXe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmThanhToan.resx">
+      <DependentUpon>FrmThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeDoanhThu.resx">
+      <DependentUpon>frmThongKeDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -97,6 +120,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DoAnLapTrinhTrenWIndowsDataSet.xsc">
+      <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnLapTrinhTrenWIndowsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnLapTrinhTrenWIndowsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DoAnLapTrinhTrenWIndowsDataSet.xss">
+      <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

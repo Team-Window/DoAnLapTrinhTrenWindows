@@ -27,5 +27,11 @@ namespace QuanLiOto
             frmGuiXe guiXe=new frmGuiXe();
             guiXe.ShowDialog(this);
         }
+
+        private void btThongKeDoanhThu_Click(object sender, EventArgs e)
+        {
+            frmThongKeDoanhThu frmThongKeDoanhThu = new frmThongKeDoanhThu();
+            frmThongKeDoanhThu.ShowDialog(this);
+        }
     }
 }

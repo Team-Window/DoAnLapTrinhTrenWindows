@@ -33,14 +33,16 @@
             this.lbl_GuiXe = new System.Windows.Forms.Label();
             this.btn_GuiXe = new System.Windows.Forms.Button();
             this.btn_ThueXeDap = new System.Windows.Forms.Button();
+            this.btThongKeDoanhThu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_TieuDe
             // 
             this.lbl_TieuDe.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TieuDe.Location = new System.Drawing.Point(0, -1);
+            this.lbl_TieuDe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TieuDe.Name = "lbl_TieuDe";
-            this.lbl_TieuDe.Size = new System.Drawing.Size(742, 98);
+            this.lbl_TieuDe.Size = new System.Drawing.Size(989, 121);
             this.lbl_TieuDe.TabIndex = 0;
             this.lbl_TieuDe.Text = "Phần mềm quản lý hệ thống chăm sóc và gởi xe khép kín";
             this.lbl_TieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -48,9 +50,10 @@
             // lbl_ThueXe
             // 
             this.lbl_ThueXe.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ThueXe.Location = new System.Drawing.Point(291, 97);
+            this.lbl_ThueXe.Location = new System.Drawing.Point(388, 119);
+            this.lbl_ThueXe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ThueXe.Name = "lbl_ThueXe";
-            this.lbl_ThueXe.Size = new System.Drawing.Size(157, 77);
+            this.lbl_ThueXe.Size = new System.Drawing.Size(209, 95);
             this.lbl_ThueXe.TabIndex = 1;
             this.lbl_ThueXe.Text = "Thuê xe";
             this.lbl_ThueXe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,9 +62,10 @@
             // 
             this.lbl_GuiXe.AutoSize = true;
             this.lbl_GuiXe.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_GuiXe.Location = new System.Drawing.Point(47, 115);
+            this.lbl_GuiXe.Location = new System.Drawing.Point(63, 142);
+            this.lbl_GuiXe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_GuiXe.Name = "lbl_GuiXe";
-            this.lbl_GuiXe.Size = new System.Drawing.Size(117, 40);
+            this.lbl_GuiXe.Size = new System.Drawing.Size(146, 51);
             this.lbl_GuiXe.TabIndex = 3;
             this.lbl_GuiXe.Text = "Gửi xe";
             // 
@@ -69,9 +73,10 @@
             // 
             this.btn_GuiXe.BackgroundImage = global::QuanLiOto.Properties.Resources.ImageGuiXe;
             this.btn_GuiXe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_GuiXe.Location = new System.Drawing.Point(63, 158);
+            this.btn_GuiXe.Location = new System.Drawing.Point(84, 194);
+            this.btn_GuiXe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_GuiXe.Name = "btn_GuiXe";
-            this.btn_GuiXe.Size = new System.Drawing.Size(87, 53);
+            this.btn_GuiXe.Size = new System.Drawing.Size(116, 65);
             this.btn_GuiXe.TabIndex = 4;
             this.btn_GuiXe.UseVisualStyleBackColor = true;
             this.btn_GuiXe.Click += new System.EventHandler(this.btn_GuiXe_Click);
@@ -80,23 +85,39 @@
             // 
             this.btn_ThueXeDap.BackgroundImage = global::QuanLiOto.Properties.Resources.ImageXeDap;
             this.btn_ThueXeDap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_ThueXeDap.Location = new System.Drawing.Point(312, 160);
+            this.btn_ThueXeDap.Location = new System.Drawing.Point(416, 197);
+            this.btn_ThueXeDap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_ThueXeDap.Name = "btn_ThueXeDap";
-            this.btn_ThueXeDap.Size = new System.Drawing.Size(64, 51);
+            this.btn_ThueXeDap.Size = new System.Drawing.Size(85, 63);
             this.btn_ThueXeDap.TabIndex = 2;
             this.btn_ThueXeDap.UseVisualStyleBackColor = true;
             this.btn_ThueXeDap.Click += new System.EventHandler(this.btn_ThueXeDap_Click);
             // 
+            // btThongKeDoanhThu
+            // 
+            this.btThongKeDoanhThu.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btThongKeDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThongKeDoanhThu.Location = new System.Drawing.Point(758, 346);
+            this.btThongKeDoanhThu.Name = "btThongKeDoanhThu";
+            this.btThongKeDoanhThu.Size = new System.Drawing.Size(155, 85);
+            this.btThongKeDoanhThu.TabIndex = 6;
+            this.btThongKeDoanhThu.Text = "Thống kê doanh thu";
+            this.btThongKeDoanhThu.UseVisualStyleBackColor = false;
+            this.btThongKeDoanhThu.Click += new System.EventHandler(this.btThongKeDoanhThu_Click);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 360);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(988, 443);
+            this.Controls.Add(this.btThongKeDoanhThu);
             this.Controls.Add(this.btn_GuiXe);
             this.Controls.Add(this.lbl_GuiXe);
             this.Controls.Add(this.btn_ThueXeDap);
             this.Controls.Add(this.lbl_ThueXe);
             this.Controls.Add(this.lbl_TieuDe);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -111,6 +132,7 @@
         private System.Windows.Forms.Button btn_ThueXeDap;
         private System.Windows.Forms.Label lbl_GuiXe;
         private System.Windows.Forms.Button btn_GuiXe;
+        private System.Windows.Forms.Button btThongKeDoanhThu;
     }
 }
 

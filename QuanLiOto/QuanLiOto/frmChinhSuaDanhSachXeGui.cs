@@ -186,5 +186,20 @@ namespace QuanLiOto
                 }
             }
         }
+
+        private void BtThanhToan_Click(object sender, EventArgs e)
+        {
+            FrmThanhToan frmThanhToan = new FrmThanhToan();
+            frmThanhToan.lb_ValueMaVe.Text = txb_MaVe.Text;
+            frmThanhToan.lb_ValueBienSo.Text = txb_BienSo.Text;
+            frmThanhToan.lb_ValueHieuXe.Text = txb_HieuXe.Text;
+            frmThanhToan.lb_ValueLoaiVe.Text = cb_LoaiVe.Text;
+            frmThanhToan.lb_ValueLoaiXe.Text = cb_LoaiXe.Text;
+            frmThanhToan.ptb_HinhAnh.Image = ptb_HinhAnh.Image;
+            frmThanhToan.dtp_GioVaoBen.Value = dtp_GioVaoBen.Value;
+            frmThanhToan.dtp_NgayVaoBen.Value = dtp_NgayVaoBen.Value;
+            frmThanhToan.ShowDialog(this);
+            
+        }
     }
 }
