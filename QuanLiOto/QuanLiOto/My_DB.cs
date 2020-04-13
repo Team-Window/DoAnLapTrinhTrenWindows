@@ -9,7 +9,7 @@ namespace QuanLiOto
 {
     class My_DB
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-HEDSHA23;Initial Catalog=DoAnLapTrinhTrenWIndows;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=ADMIN;Initial Catalog=DoAnLapTrinhTrenWIndows;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
         public SqlConnection getConnection
         {

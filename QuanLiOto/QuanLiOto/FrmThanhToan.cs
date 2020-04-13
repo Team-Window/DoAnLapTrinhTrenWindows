@@ -48,13 +48,13 @@ namespace QuanLiOto
             ptb_HinhAnh.Image.Save(hinhanh, ptb_HinhAnh.Image.RawFormat);
             TimeSpan giovaoben1 = dtp_GioVaoBen.Value.TimeOfDay;
             TimeSpan gioraben1 = dtp_Gioraben.Value.TimeOfDay;
-            if (thongke.InsertThongKe(mave, lb_ValueBienSo.Text, lb_ValueLoaiXe.Text, lb_ValueHieuXe.Text, hinhanh,giovaoben1, dtp_NgayVaoBen.Value,lb_ValueLoaiVe.Text, gioraben1, dtp_ngayraben.Value, SoTienPhaiTra))
+            if (thongke.InsertThongKe(mave, lb_ValueBienSo.Text, lb_ValueLoaiXe.Text, lb_ValueHieuXe.Text, hinhanh, giovaoben1, dtp_NgayVaoBen.Value,lb_ValueLoaiVe.Text, gioraben1, dtp_ngayraben.Value, SoTienPhaiTra))
             {
                 MessageBox.Show("Đã thanh toán thành công", "Add Thống kê", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Error", "Add Thông kê", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error", "Add Thống kê", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
         }
@@ -102,6 +102,7 @@ namespace QuanLiOto
             //txt_ThanhTien.Text = tongsogio.ToString();
             return SoTienPhaiTra;  
         }
-        
+
+
     }
 }
