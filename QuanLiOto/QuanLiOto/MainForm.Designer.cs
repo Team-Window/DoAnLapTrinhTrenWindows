@@ -33,7 +33,6 @@
             this.lbl_GuiXe = new System.Windows.Forms.Label();
             this.btn_GuiXe = new System.Windows.Forms.Button();
             this.btn_ThueXeDap = new System.Windows.Forms.Button();
-            this.btThongKeDoanhThu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_TieuDe
@@ -74,7 +73,7 @@
             this.btn_GuiXe.BackgroundImage = global::QuanLiOto.Properties.Resources.ImageGuiXe;
             this.btn_GuiXe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_GuiXe.Location = new System.Drawing.Point(84, 194);
-            this.btn_GuiXe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_GuiXe.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuiXe.Name = "btn_GuiXe";
             this.btn_GuiXe.Size = new System.Drawing.Size(116, 65);
             this.btn_GuiXe.TabIndex = 4;
@@ -86,24 +85,12 @@
             this.btn_ThueXeDap.BackgroundImage = global::QuanLiOto.Properties.Resources.ImageXeDap;
             this.btn_ThueXeDap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_ThueXeDap.Location = new System.Drawing.Point(416, 197);
-            this.btn_ThueXeDap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ThueXeDap.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThueXeDap.Name = "btn_ThueXeDap";
             this.btn_ThueXeDap.Size = new System.Drawing.Size(85, 63);
             this.btn_ThueXeDap.TabIndex = 2;
             this.btn_ThueXeDap.UseVisualStyleBackColor = true;
             this.btn_ThueXeDap.Click += new System.EventHandler(this.btn_ThueXeDap_Click);
-            // 
-            // btThongKeDoanhThu
-            // 
-            this.btThongKeDoanhThu.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btThongKeDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThongKeDoanhThu.Location = new System.Drawing.Point(758, 346);
-            this.btThongKeDoanhThu.Name = "btThongKeDoanhThu";
-            this.btThongKeDoanhThu.Size = new System.Drawing.Size(155, 85);
-            this.btThongKeDoanhThu.TabIndex = 6;
-            this.btThongKeDoanhThu.Text = "Thống kê doanh thu";
-            this.btThongKeDoanhThu.UseVisualStyleBackColor = false;
-            this.btThongKeDoanhThu.Click += new System.EventHandler(this.btThongKeDoanhThu_Click);
             // 
             // MainForm
             // 
@@ -111,13 +98,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(988, 443);
-            this.Controls.Add(this.btThongKeDoanhThu);
             this.Controls.Add(this.btn_GuiXe);
             this.Controls.Add(this.lbl_GuiXe);
             this.Controls.Add(this.btn_ThueXeDap);
             this.Controls.Add(this.lbl_ThueXe);
             this.Controls.Add(this.lbl_TieuDe);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -132,7 +118,6 @@
         private System.Windows.Forms.Button btn_ThueXeDap;
         private System.Windows.Forms.Label lbl_GuiXe;
         private System.Windows.Forms.Button btn_GuiXe;
-        private System.Windows.Forms.Button btThongKeDoanhThu;
     }
 }
 

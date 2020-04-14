@@ -146,5 +146,18 @@ namespace QuanLiOto
                 return false;
             }
         }
+        public bool maveExist(int mave)
+        {
+            SqlCommand command = new SqlCommand("SELECT * FROM GuiXe WHERE mave=@mave", mydb.getConnection);
+            command.Parameters.Add("@mave", SqlDbType.Int).Value = mave;
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if ((table.Rows.Count) == 0)
+                return false;
+            else
+                return true;
+        }
     }
 }

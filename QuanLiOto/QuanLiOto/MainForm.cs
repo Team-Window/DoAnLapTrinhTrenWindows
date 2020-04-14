@@ -30,8 +30,7 @@ namespace QuanLiOto
 
         private void btThongKeDoanhThu_Click(object sender, EventArgs e)
         {
-            frmThongKeDoanhThu frmThongKeDoanhThu = new frmThongKeDoanhThu();
-            frmThongKeDoanhThu.ShowDialog(this);
+            
         }
     }
 }

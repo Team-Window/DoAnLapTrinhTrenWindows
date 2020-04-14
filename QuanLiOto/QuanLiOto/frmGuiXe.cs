@@ -94,14 +94,21 @@ namespace QuanLiOto
             }
             if (verif())
             {
-                ptb_HinhAnh.Image.Save(hinhanh, ptb_HinhAnh.Image.RawFormat);
-                if (guixe.InsertGuiXe(mave, bienso, loaixe, hieuxe, hinhanh, giovaoben, ngayvaoben,loaive))
+                if (!guixe.maveExist(mave))
                 {
-                    MessageBox.Show("Đã thêm thành công", "Add GuiXe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ptb_HinhAnh.Image.Save(hinhanh, ptb_HinhAnh.Image.RawFormat);
+                    if (guixe.InsertGuiXe(mave, bienso, loaixe, hieuxe, hinhanh, giovaoben, ngayvaoben, loaive))
+                    {
+                        MessageBox.Show("Đã thêm thành công", "Add GuiXe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error", "Add GuiXe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Add GuiXe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Vé tồn tại", "Add GuiXe", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             bool verif()
@@ -177,6 +184,11 @@ namespace QuanLiOto
             frmChinhSuaDanhSachXeGui frmChinhSua = new frmChinhSuaDanhSachXeGui();
             frmChinhSua.ShowDialog(this);
         }
-        
+
+        private void btn_ThongKe_Click(object sender, EventArgs e)
+        {
+            frmThongKeDoanhThu frmThongKeDoanhThu = new frmThongKeDoanhThu();
+            frmThongKeDoanhThu.ShowDialog(this);
+        }
     }
 }

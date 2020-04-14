@@ -18,16 +18,17 @@ namespace QuanLiOto
         {
             InitializeComponent();
         }
-
+        GuiXe thongke = new GuiXe();
+        int SoTienPhaiTra = 0;
         private void bt_CheckOut_Click(object sender, EventArgs e)
         {
-            GuiXe thongke = new GuiXe();
+           
             dtp_Gioraben.Value = DateTime.Now;
-            dtp_ngayraben.Value = DateTime.Now;
+            dtp_ngayraben.Value = DateTime.Now.Date;
             dtp_Gioraben.Visible = true;
             dtp_ngayraben.Visible = true;
             int giave = 0;
-            int SoTienPhaiTra = 0;
+            
             if(lb_ValueLoaiXe.Text=="xe đạp")
             {
                 giave = 2000;
@@ -43,19 +44,7 @@ namespace QuanLiOto
                 giave = 10000;
                 SoTienPhaiTra = Thanhtoan(lb_ValueLoaiVe.Text, dtp_GioVaoBen.Value, dtp_Gioraben.Value, dtp_NgayVaoBen.Value, dtp_ngayraben.Value, giave);
             }
-            int mave = int.Parse(lb_ValueMaVe.Text);
-            MemoryStream hinhanh = new MemoryStream();
-            ptb_HinhAnh.Image.Save(hinhanh, ptb_HinhAnh.Image.RawFormat);
-            TimeSpan giovaoben1 = dtp_GioVaoBen.Value.TimeOfDay;
-            TimeSpan gioraben1 = dtp_Gioraben.Value.TimeOfDay;
-            if (thongke.InsertThongKe(mave, lb_ValueBienSo.Text, lb_ValueLoaiXe.Text, lb_ValueHieuXe.Text, hinhanh, giovaoben1, dtp_NgayVaoBen.Value,lb_ValueLoaiVe.Text, gioraben1, dtp_ngayraben.Value, SoTienPhaiTra))
-            {
-                MessageBox.Show("Đã thanh toán thành công", "Add Thống kê", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Error", "Add Thống kê", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
            
         }
          public int Thanhtoan(string loaive, DateTime giovaoben,DateTime gioraben, DateTime ngayvaoben, DateTime ngayraben, int giave )
@@ -68,6 +57,10 @@ namespace QuanLiOto
             int tongsogio = Sogiogiuxe.Hours;
             if(loaive=="Vé giờ")
             {
+                if(tongsogio==0)
+                {
+                    SoTienPhaiTra = giave;
+                }    
                 if(tongsogio<0)
                 {
                     tongsogio = 24 - tongsogio;
@@ -103,6 +96,29 @@ namespace QuanLiOto
             return SoTienPhaiTra;  
         }
 
+        private void bt_Huy_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
+        private void bt_ThanhToan_Click(object sender, EventArgs e)
+        {
+           
+                int mave = int.Parse(lb_ValueMaVe.Text);
+                MemoryStream hinhanh = new MemoryStream();
+                ptb_HinhAnh.Image.Save(hinhanh, ptb_HinhAnh.Image.RawFormat);
+                TimeSpan giovaoben1 = dtp_GioVaoBen.Value.TimeOfDay;
+                TimeSpan gioraben1 = dtp_Gioraben.Value.TimeOfDay;
+                if (thongke.InsertThongKe(mave, lb_ValueBienSo.Text, lb_ValueLoaiXe.Text, lb_ValueHieuXe.Text, hinhanh, giovaoben1, dtp_NgayVaoBen.Value, lb_ValueLoaiVe.Text, gioraben1, dtp_ngayraben.Value, SoTienPhaiTra))
+                {
+                    MessageBox.Show("Đã thanh toán thành công", "Add Thống kê", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Error", "Add Thống kê", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            if ((MessageBox.Show("Are Yousure You Want To Delete This Course", "Remove Course", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
+                thongke.DeleteGuiXe(mave);
+        }
     }
 }

@@ -51,6 +51,8 @@
             this.bt_CheckOut = new System.Windows.Forms.Button();
             this.lb_ThanhToan = new System.Windows.Forms.Label();
             this.txt_ThanhTien = new System.Windows.Forms.TextBox();
+            this.bt_Huy = new System.Windows.Forms.Button();
+            this.bt_ThanhToan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_HinhAnh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +61,7 @@
             this.dtp_NgayVaoBen.Location = new System.Drawing.Point(550, 88);
             this.dtp_NgayVaoBen.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtp_NgayVaoBen.Name = "dtp_NgayVaoBen";
-            this.dtp_NgayVaoBen.Size = new System.Drawing.Size(363, 23);
+            this.dtp_NgayVaoBen.Size = new System.Drawing.Size(363, 27);
             this.dtp_NgayVaoBen.TabIndex = 52;
             // 
             // lbl_NgayVaoBen
@@ -68,7 +70,7 @@
             this.lbl_NgayVaoBen.Location = new System.Drawing.Point(395, 95);
             this.lbl_NgayVaoBen.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_NgayVaoBen.Name = "lbl_NgayVaoBen";
-            this.lbl_NgayVaoBen.Size = new System.Drawing.Size(113, 17);
+            this.lbl_NgayVaoBen.Size = new System.Drawing.Size(128, 20);
             this.lbl_NgayVaoBen.TabIndex = 51;
             this.lbl_NgayVaoBen.Text = "Ngày vào bến:";
             // 
@@ -78,7 +80,7 @@
             this.dtp_GioVaoBen.Location = new System.Drawing.Point(170, 88);
             this.dtp_GioVaoBen.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtp_GioVaoBen.Name = "dtp_GioVaoBen";
-            this.dtp_GioVaoBen.Size = new System.Drawing.Size(180, 23);
+            this.dtp_GioVaoBen.Size = new System.Drawing.Size(180, 27);
             this.dtp_GioVaoBen.TabIndex = 50;
             // 
             // lbl_GioVaoBen
@@ -87,7 +89,7 @@
             this.lbl_GioVaoBen.Location = new System.Drawing.Point(18, 88);
             this.lbl_GioVaoBen.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_GioVaoBen.Name = "lbl_GioVaoBen";
-            this.lbl_GioVaoBen.Size = new System.Drawing.Size(101, 17);
+            this.lbl_GioVaoBen.Size = new System.Drawing.Size(115, 20);
             this.lbl_GioVaoBen.TabIndex = 49;
             this.lbl_GioVaoBen.Text = "Giờ vào bến:";
             // 
@@ -97,7 +99,7 @@
             this.lbl_HinhAnh.Location = new System.Drawing.Point(18, 143);
             this.lbl_HinhAnh.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_HinhAnh.Name = "lbl_HinhAnh";
-            this.lbl_HinhAnh.Size = new System.Drawing.Size(78, 17);
+            this.lbl_HinhAnh.Size = new System.Drawing.Size(90, 20);
             this.lbl_HinhAnh.TabIndex = 48;
             this.lbl_HinhAnh.Text = "Hình ảnh:";
             // 
@@ -107,7 +109,7 @@
             this.lbl_HieuXe.Location = new System.Drawing.Point(883, 26);
             this.lbl_HieuXe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_HieuXe.Name = "lbl_HieuXe";
-            this.lbl_HieuXe.Size = new System.Drawing.Size(67, 17);
+            this.lbl_HieuXe.Size = new System.Drawing.Size(79, 20);
             this.lbl_HieuXe.TabIndex = 45;
             this.lbl_HieuXe.Text = "Hiệu xe:";
             // 
@@ -117,7 +119,7 @@
             this.lbl_LoaiXe.Location = new System.Drawing.Point(620, 26);
             this.lbl_LoaiXe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_LoaiXe.Name = "lbl_LoaiXe";
-            this.lbl_LoaiXe.Size = new System.Drawing.Size(65, 17);
+            this.lbl_LoaiXe.Size = new System.Drawing.Size(76, 20);
             this.lbl_LoaiXe.TabIndex = 43;
             this.lbl_LoaiXe.Text = "Loại xe:";
             // 
@@ -127,7 +129,7 @@
             this.lbl_BienSo.Location = new System.Drawing.Point(340, 26);
             this.lbl_BienSo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_BienSo.Name = "lbl_BienSo";
-            this.lbl_BienSo.Size = new System.Drawing.Size(67, 17);
+            this.lbl_BienSo.Size = new System.Drawing.Size(79, 20);
             this.lbl_BienSo.TabIndex = 41;
             this.lbl_BienSo.Text = "Biển số:";
             // 
@@ -137,7 +139,7 @@
             this.lbl_MaVe.Location = new System.Drawing.Point(40, 26);
             this.lbl_MaVe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_MaVe.Name = "lbl_MaVe";
-            this.lbl_MaVe.Size = new System.Drawing.Size(56, 17);
+            this.lbl_MaVe.Size = new System.Drawing.Size(65, 20);
             this.lbl_MaVe.TabIndex = 39;
             this.lbl_MaVe.Text = "Mã vé:";
             // 
@@ -149,7 +151,6 @@
             this.ptb_HinhAnh.Size = new System.Drawing.Size(404, 268);
             this.ptb_HinhAnh.TabIndex = 47;
             this.ptb_HinhAnh.TabStop = false;
-//            this.ptb_HinhAnh.Click += new System.EventHandler(this.ptb_HinhAnh_Click);
             // 
             // lbl_LoaiVe
             // 
@@ -157,7 +158,7 @@
             this.lbl_LoaiVe.Location = new System.Drawing.Point(935, 95);
             this.lbl_LoaiVe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_LoaiVe.Name = "lbl_LoaiVe";
-            this.lbl_LoaiVe.Size = new System.Drawing.Size(66, 17);
+            this.lbl_LoaiVe.Size = new System.Drawing.Size(76, 20);
             this.lbl_LoaiVe.TabIndex = 57;
             this.lbl_LoaiVe.Text = "Loại vé:";
             // 
@@ -167,7 +168,7 @@
             this.lb_ValueMaVe.Location = new System.Drawing.Point(118, 26);
             this.lb_ValueMaVe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ValueMaVe.Name = "lb_ValueMaVe";
-            this.lb_ValueMaVe.Size = new System.Drawing.Size(52, 17);
+            this.lb_ValueMaVe.Size = new System.Drawing.Size(59, 20);
             this.lb_ValueMaVe.TabIndex = 58;
             this.lb_ValueMaVe.Text = "label1";
             // 
@@ -177,7 +178,7 @@
             this.lb_ValueBienSo.Location = new System.Drawing.Point(430, 26);
             this.lb_ValueBienSo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ValueBienSo.Name = "lb_ValueBienSo";
-            this.lb_ValueBienSo.Size = new System.Drawing.Size(52, 17);
+            this.lb_ValueBienSo.Size = new System.Drawing.Size(59, 20);
             this.lb_ValueBienSo.TabIndex = 58;
             this.lb_ValueBienSo.Text = "label1";
             // 
@@ -187,7 +188,7 @@
             this.lb_ValueLoaiXe.Location = new System.Drawing.Point(708, 26);
             this.lb_ValueLoaiXe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ValueLoaiXe.Name = "lb_ValueLoaiXe";
-            this.lb_ValueLoaiXe.Size = new System.Drawing.Size(52, 17);
+            this.lb_ValueLoaiXe.Size = new System.Drawing.Size(59, 20);
             this.lb_ValueLoaiXe.TabIndex = 58;
             this.lb_ValueLoaiXe.Text = "label1";
             // 
@@ -197,7 +198,7 @@
             this.lb_ValueHieuXe.Location = new System.Drawing.Point(974, 26);
             this.lb_ValueHieuXe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ValueHieuXe.Name = "lb_ValueHieuXe";
-            this.lb_ValueHieuXe.Size = new System.Drawing.Size(52, 17);
+            this.lb_ValueHieuXe.Size = new System.Drawing.Size(59, 20);
             this.lb_ValueHieuXe.TabIndex = 58;
             this.lb_ValueHieuXe.Text = "label1";
             // 
@@ -207,7 +208,7 @@
             this.lb_ValueLoaiVe.Location = new System.Drawing.Point(1030, 95);
             this.lb_ValueLoaiVe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ValueLoaiVe.Name = "lb_ValueLoaiVe";
-            this.lb_ValueLoaiVe.Size = new System.Drawing.Size(52, 17);
+            this.lb_ValueLoaiVe.Size = new System.Drawing.Size(59, 20);
             this.lb_ValueLoaiVe.TabIndex = 58;
             this.lb_ValueLoaiVe.Text = "label1";
             // 
@@ -217,7 +218,7 @@
             this.lb_Ngayraben.Location = new System.Drawing.Point(454, 321);
             this.lb_Ngayraben.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lb_Ngayraben.Name = "lb_Ngayraben";
-            this.lb_Ngayraben.Size = new System.Drawing.Size(102, 17);
+            this.lb_Ngayraben.Size = new System.Drawing.Size(116, 20);
             this.lb_Ngayraben.TabIndex = 59;
             this.lb_Ngayraben.Text = "Ngày ra bến:";
             // 
@@ -226,7 +227,7 @@
             this.dtp_ngayraben.Location = new System.Drawing.Point(582, 321);
             this.dtp_ngayraben.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtp_ngayraben.Name = "dtp_ngayraben";
-            this.dtp_ngayraben.Size = new System.Drawing.Size(363, 23);
+            this.dtp_ngayraben.Size = new System.Drawing.Size(363, 27);
             this.dtp_ngayraben.TabIndex = 52;
             this.dtp_ngayraben.Visible = false;
             // 
@@ -236,7 +237,7 @@
             this.lb_Gioraben.Location = new System.Drawing.Point(455, 414);
             this.lb_Gioraben.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lb_Gioraben.Name = "lb_Gioraben";
-            this.lb_Gioraben.Size = new System.Drawing.Size(90, 17);
+            this.lb_Gioraben.Size = new System.Drawing.Size(103, 20);
             this.lb_Gioraben.TabIndex = 60;
             this.lb_Gioraben.Text = "Giờ ra bến:";
             // 
@@ -246,19 +247,20 @@
             this.dtp_Gioraben.Location = new System.Drawing.Point(582, 407);
             this.dtp_Gioraben.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtp_Gioraben.Name = "dtp_Gioraben";
-            this.dtp_Gioraben.Size = new System.Drawing.Size(180, 23);
+            this.dtp_Gioraben.Size = new System.Drawing.Size(180, 27);
             this.dtp_Gioraben.TabIndex = 61;
             this.dtp_Gioraben.Visible = false;
             // 
             // bt_CheckOut
             // 
+            this.bt_CheckOut.BackColor = System.Drawing.Color.SlateGray;
             this.bt_CheckOut.Location = new System.Drawing.Point(445, 178);
             this.bt_CheckOut.Margin = new System.Windows.Forms.Padding(4);
             this.bt_CheckOut.Name = "bt_CheckOut";
             this.bt_CheckOut.Size = new System.Drawing.Size(362, 116);
             this.bt_CheckOut.TabIndex = 62;
             this.bt_CheckOut.Text = "CHECK OUT";
-            this.bt_CheckOut.UseVisualStyleBackColor = true;
+            this.bt_CheckOut.UseVisualStyleBackColor = false;
             this.bt_CheckOut.Click += new System.EventHandler(this.bt_CheckOut_Click);
             // 
             // lb_ThanhToan
@@ -267,7 +269,7 @@
             this.lb_ThanhToan.Location = new System.Drawing.Point(455, 488);
             this.lb_ThanhToan.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lb_ThanhToan.Name = "lb_ThanhToan";
-            this.lb_ThanhToan.Size = new System.Drawing.Size(96, 17);
+            this.lb_ThanhToan.Size = new System.Drawing.Size(108, 20);
             this.lb_ThanhToan.TabIndex = 63;
             this.lb_ThanhToan.Text = "Thành Tiền:";
             // 
@@ -276,14 +278,38 @@
             this.txt_ThanhTien.Location = new System.Drawing.Point(582, 488);
             this.txt_ThanhTien.Name = "txt_ThanhTien";
             this.txt_ThanhTien.ReadOnly = true;
-            this.txt_ThanhTien.Size = new System.Drawing.Size(185, 23);
+            this.txt_ThanhTien.Size = new System.Drawing.Size(185, 27);
             this.txt_ThanhTien.TabIndex = 64;
+            // 
+            // bt_Huy
+            // 
+            this.bt_Huy.BackColor = System.Drawing.Color.SlateGray;
+            this.bt_Huy.Location = new System.Drawing.Point(458, 576);
+            this.bt_Huy.Name = "bt_Huy";
+            this.bt_Huy.Size = new System.Drawing.Size(154, 48);
+            this.bt_Huy.TabIndex = 66;
+            this.bt_Huy.Text = "HUỶ";
+            this.bt_Huy.UseVisualStyleBackColor = false;
+            this.bt_Huy.Click += new System.EventHandler(this.bt_Huy_Click);
+            // 
+            // bt_ThanhToan
+            // 
+            this.bt_ThanhToan.BackColor = System.Drawing.Color.SlateGray;
+            this.bt_ThanhToan.Location = new System.Drawing.Point(732, 576);
+            this.bt_ThanhToan.Name = "bt_ThanhToan";
+            this.bt_ThanhToan.Size = new System.Drawing.Size(141, 48);
+            this.bt_ThanhToan.TabIndex = 66;
+            this.bt_ThanhToan.Text = "THANH TOÁN";
+            this.bt_ThanhToan.UseVisualStyleBackColor = false;
+            this.bt_ThanhToan.Click += new System.EventHandler(this.bt_ThanhToan_Click);
             // 
             // FrmThanhToan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1330, 664);
+            this.Controls.Add(this.bt_ThanhToan);
+            this.Controls.Add(this.bt_Huy);
             this.Controls.Add(this.txt_ThanhTien);
             this.Controls.Add(this.lb_ThanhToan);
             this.Controls.Add(this.bt_CheckOut);
@@ -341,5 +367,7 @@
         private System.Windows.Forms.Button bt_CheckOut;
         private System.Windows.Forms.Label lb_ThanhToan;
         private System.Windows.Forms.TextBox txt_ThanhTien;
+        private System.Windows.Forms.Button bt_Huy;
+        private System.Windows.Forms.Button bt_ThanhToan;
     }
 }
