@@ -59,7 +59,7 @@
             this.lbl_MaVe.Location = new System.Drawing.Point(22, 41);
             this.lbl_MaVe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_MaVe.Name = "lbl_MaVe";
-            this.lbl_MaVe.Size = new System.Drawing.Size(65, 20);
+            this.lbl_MaVe.Size = new System.Drawing.Size(56, 17);
             this.lbl_MaVe.TabIndex = 0;
             this.lbl_MaVe.Text = "Mã vé:";
             // 
@@ -68,7 +68,7 @@
             this.txb_MaVe.Location = new System.Drawing.Point(192, 31);
             this.txb_MaVe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txb_MaVe.Name = "txb_MaVe";
-            this.txb_MaVe.Size = new System.Drawing.Size(180, 27);
+            this.txb_MaVe.Size = new System.Drawing.Size(180, 23);
             this.txb_MaVe.TabIndex = 1;
             // 
             // lbl_BienSo
@@ -77,7 +77,7 @@
             this.lbl_BienSo.Location = new System.Drawing.Point(22, 108);
             this.lbl_BienSo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_BienSo.Name = "lbl_BienSo";
-            this.lbl_BienSo.Size = new System.Drawing.Size(79, 20);
+            this.lbl_BienSo.Size = new System.Drawing.Size(67, 17);
             this.lbl_BienSo.TabIndex = 2;
             this.lbl_BienSo.Text = "Biển số:";
             // 
@@ -86,7 +86,7 @@
             this.txb_BienSo.Location = new System.Drawing.Point(192, 102);
             this.txb_BienSo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txb_BienSo.Name = "txb_BienSo";
-            this.txb_BienSo.Size = new System.Drawing.Size(180, 27);
+            this.txb_BienSo.Size = new System.Drawing.Size(180, 23);
             this.txb_BienSo.TabIndex = 3;
             // 
             // lbl_LoaiXe
@@ -95,7 +95,7 @@
             this.lbl_LoaiXe.Location = new System.Drawing.Point(22, 189);
             this.lbl_LoaiXe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_LoaiXe.Name = "lbl_LoaiXe";
-            this.lbl_LoaiXe.Size = new System.Drawing.Size(76, 20);
+            this.lbl_LoaiXe.Size = new System.Drawing.Size(65, 17);
             this.lbl_LoaiXe.TabIndex = 4;
             this.lbl_LoaiXe.Text = "Loại xe:";
             // 
@@ -109,7 +109,7 @@
             this.cb_LoaiXe.Location = new System.Drawing.Point(192, 178);
             this.cb_LoaiXe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cb_LoaiXe.Name = "cb_LoaiXe";
-            this.cb_LoaiXe.Size = new System.Drawing.Size(218, 28);
+            this.cb_LoaiXe.Size = new System.Drawing.Size(218, 25);
             this.cb_LoaiXe.TabIndex = 5;
             // 
             // lbl_HieuXe
@@ -118,7 +118,7 @@
             this.lbl_HieuXe.Location = new System.Drawing.Point(28, 254);
             this.lbl_HieuXe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_HieuXe.Name = "lbl_HieuXe";
-            this.lbl_HieuXe.Size = new System.Drawing.Size(79, 20);
+            this.lbl_HieuXe.Size = new System.Drawing.Size(67, 17);
             this.lbl_HieuXe.TabIndex = 6;
             this.lbl_HieuXe.Text = "Hiệu xe:";
             // 
@@ -127,7 +127,7 @@
             this.txb_HieuXe.Location = new System.Drawing.Point(192, 254);
             this.txb_HieuXe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txb_HieuXe.Name = "txb_HieuXe";
-            this.txb_HieuXe.Size = new System.Drawing.Size(180, 27);
+            this.txb_HieuXe.Size = new System.Drawing.Size(180, 23);
             this.txb_HieuXe.TabIndex = 7;
             // 
             // lbl_HinhAnh
@@ -136,7 +136,7 @@
             this.lbl_HinhAnh.Location = new System.Drawing.Point(638, 19);
             this.lbl_HinhAnh.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_HinhAnh.Name = "lbl_HinhAnh";
-            this.lbl_HinhAnh.Size = new System.Drawing.Size(90, 20);
+            this.lbl_HinhAnh.Size = new System.Drawing.Size(78, 17);
             this.lbl_HinhAnh.TabIndex = 9;
             this.lbl_HinhAnh.Text = "Hình ảnh:";
             // 
@@ -146,7 +146,7 @@
             this.lbl_GioVaoBen.Location = new System.Drawing.Point(22, 311);
             this.lbl_GioVaoBen.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_GioVaoBen.Name = "lbl_GioVaoBen";
-            this.lbl_GioVaoBen.Size = new System.Drawing.Size(115, 20);
+            this.lbl_GioVaoBen.Size = new System.Drawing.Size(101, 17);
             this.lbl_GioVaoBen.TabIndex = 10;
             this.lbl_GioVaoBen.Text = "Giờ vào bến:";
             // 
@@ -156,7 +156,7 @@
             this.dtp_GioVaoBen.Location = new System.Drawing.Point(192, 301);
             this.dtp_GioVaoBen.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtp_GioVaoBen.Name = "dtp_GioVaoBen";
-            this.dtp_GioVaoBen.Size = new System.Drawing.Size(180, 27);
+            this.dtp_GioVaoBen.Size = new System.Drawing.Size(180, 23);
             this.dtp_GioVaoBen.TabIndex = 11;
             // 
             // lbl_NgayVaoBen
@@ -165,7 +165,7 @@
             this.lbl_NgayVaoBen.Location = new System.Drawing.Point(28, 369);
             this.lbl_NgayVaoBen.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_NgayVaoBen.Name = "lbl_NgayVaoBen";
-            this.lbl_NgayVaoBen.Size = new System.Drawing.Size(128, 20);
+            this.lbl_NgayVaoBen.Size = new System.Drawing.Size(113, 17);
             this.lbl_NgayVaoBen.TabIndex = 12;
             this.lbl_NgayVaoBen.Text = "Ngày vào bến:";
             // 
@@ -174,7 +174,7 @@
             this.dtp_NgayVaoBen.Location = new System.Drawing.Point(192, 369);
             this.dtp_NgayVaoBen.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtp_NgayVaoBen.Name = "dtp_NgayVaoBen";
-            this.dtp_NgayVaoBen.Size = new System.Drawing.Size(363, 27);
+            this.dtp_NgayVaoBen.Size = new System.Drawing.Size(363, 23);
             this.dtp_NgayVaoBen.TabIndex = 13;
             // 
             // btn_Upload
@@ -243,7 +243,7 @@
             this.lbl_LoaiVe.Location = new System.Drawing.Point(33, 428);
             this.lbl_LoaiVe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_LoaiVe.Name = "lbl_LoaiVe";
-            this.lbl_LoaiVe.Size = new System.Drawing.Size(76, 20);
+            this.lbl_LoaiVe.Size = new System.Drawing.Size(66, 17);
             this.lbl_LoaiVe.TabIndex = 19;
             this.lbl_LoaiVe.Text = "Loại vé:";
             // 
@@ -258,7 +258,7 @@
             this.cb_LoaiVe.Location = new System.Drawing.Point(192, 415);
             this.cb_LoaiVe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cb_LoaiVe.Name = "cb_LoaiVe";
-            this.cb_LoaiVe.Size = new System.Drawing.Size(218, 28);
+            this.cb_LoaiVe.Size = new System.Drawing.Size(218, 25);
             this.cb_LoaiVe.TabIndex = 20;
             // 
             // BtThanhToan
@@ -285,7 +285,7 @@
             // 
             // frmChinhSuaDanhSachXeGui
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 545);
             this.Controls.Add(this.BtThanhToan);
@@ -313,6 +313,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmChinhSuaDanhSachXeGui";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDanhSachXeGui";
             ((System.ComponentModel.ISupportInitialize)(this.ptb_HinhAnh)).EndInit();
             this.ResumeLayout(false);
