@@ -38,7 +38,6 @@
             this.txb_HieuXe = new System.Windows.Forms.TextBox();
             this.cb_LoaiXe = new System.Windows.Forms.ComboBox();
             this.btn_VaoBen = new System.Windows.Forms.Button();
-            this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.dtgv_XeGui = new System.Windows.Forms.DataGridView();
             this.lbl_Search = new System.Windows.Forms.Label();
@@ -61,7 +60,7 @@
             this.lbl_MaVe.Location = new System.Drawing.Point(23, 48);
             this.lbl_MaVe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_MaVe.Name = "lbl_MaVe";
-            this.lbl_MaVe.Size = new System.Drawing.Size(65, 20);
+            this.lbl_MaVe.Size = new System.Drawing.Size(56, 17);
             this.lbl_MaVe.TabIndex = 0;
             this.lbl_MaVe.Text = "Mã vé:";
             // 
@@ -70,7 +69,7 @@
             this.txb_MaVe.Location = new System.Drawing.Point(197, 38);
             this.txb_MaVe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txb_MaVe.Name = "txb_MaVe";
-            this.txb_MaVe.Size = new System.Drawing.Size(202, 27);
+            this.txb_MaVe.Size = new System.Drawing.Size(202, 23);
             this.txb_MaVe.TabIndex = 1;
             // 
             // lbl_BienSo
@@ -79,7 +78,7 @@
             this.lbl_BienSo.Location = new System.Drawing.Point(29, 105);
             this.lbl_BienSo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_BienSo.Name = "lbl_BienSo";
-            this.lbl_BienSo.Size = new System.Drawing.Size(79, 20);
+            this.lbl_BienSo.Size = new System.Drawing.Size(67, 17);
             this.lbl_BienSo.TabIndex = 2;
             this.lbl_BienSo.Text = "Biển số:";
             // 
@@ -88,7 +87,7 @@
             this.txb_BienSo.Location = new System.Drawing.Point(197, 105);
             this.txb_BienSo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txb_BienSo.Name = "txb_BienSo";
-            this.txb_BienSo.Size = new System.Drawing.Size(202, 27);
+            this.txb_BienSo.Size = new System.Drawing.Size(202, 23);
             this.txb_BienSo.TabIndex = 3;
             // 
             // lbl_LoaiXe
@@ -97,7 +96,7 @@
             this.lbl_LoaiXe.Location = new System.Drawing.Point(29, 178);
             this.lbl_LoaiXe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_LoaiXe.Name = "lbl_LoaiXe";
-            this.lbl_LoaiXe.Size = new System.Drawing.Size(76, 20);
+            this.lbl_LoaiXe.Size = new System.Drawing.Size(65, 17);
             this.lbl_LoaiXe.TabIndex = 4;
             this.lbl_LoaiXe.Text = "Loại xe:";
             // 
@@ -107,7 +106,7 @@
             this.lbl_HieuXe.Location = new System.Drawing.Point(22, 239);
             this.lbl_HieuXe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_HieuXe.Name = "lbl_HieuXe";
-            this.lbl_HieuXe.Size = new System.Drawing.Size(79, 20);
+            this.lbl_HieuXe.Size = new System.Drawing.Size(67, 17);
             this.lbl_HieuXe.TabIndex = 5;
             this.lbl_HieuXe.Text = "Hiệu xe:";
             // 
@@ -117,7 +116,7 @@
             this.lbl_HinhAnh.Location = new System.Drawing.Point(22, 288);
             this.lbl_HinhAnh.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_HinhAnh.Name = "lbl_HinhAnh";
-            this.lbl_HinhAnh.Size = new System.Drawing.Size(90, 20);
+            this.lbl_HinhAnh.Size = new System.Drawing.Size(78, 17);
             this.lbl_HinhAnh.TabIndex = 6;
             this.lbl_HinhAnh.Text = "Hình ảnh:";
             // 
@@ -126,7 +125,7 @@
             this.txb_HieuXe.Location = new System.Drawing.Point(197, 234);
             this.txb_HieuXe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txb_HieuXe.Name = "txb_HieuXe";
-            this.txb_HieuXe.Size = new System.Drawing.Size(180, 27);
+            this.txb_HieuXe.Size = new System.Drawing.Size(180, 23);
             this.txb_HieuXe.TabIndex = 10;
             // 
             // cb_LoaiXe
@@ -139,7 +138,7 @@
             this.cb_LoaiXe.Location = new System.Drawing.Point(197, 165);
             this.cb_LoaiXe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cb_LoaiXe.Name = "cb_LoaiXe";
-            this.cb_LoaiXe.Size = new System.Drawing.Size(218, 28);
+            this.cb_LoaiXe.Size = new System.Drawing.Size(218, 25);
             this.cb_LoaiXe.TabIndex = 11;
             // 
             // btn_VaoBen
@@ -153,19 +152,9 @@
             this.btn_VaoBen.UseVisualStyleBackColor = true;
             this.btn_VaoBen.Click += new System.EventHandler(this.btn_VaoBen_Click);
             // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.Location = new System.Drawing.Point(447, 648);
-            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(192, 66);
-            this.btn_Xoa.TabIndex = 16;
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.UseVisualStyleBackColor = true;
-            // 
             // btn_Sua
             // 
-            this.btn_Sua.Location = new System.Drawing.Point(656, 648);
+            this.btn_Sua.Location = new System.Drawing.Point(448, 648);
             this.btn_Sua.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(175, 66);
@@ -177,11 +166,11 @@
             // dtgv_XeGui
             // 
             this.dtgv_XeGui.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_XeGui.Location = new System.Drawing.Point(656, 72);
+            this.dtgv_XeGui.Location = new System.Drawing.Point(620, 60);
             this.dtgv_XeGui.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtgv_XeGui.Name = "dtgv_XeGui";
             this.dtgv_XeGui.RowHeadersWidth = 51;
-            this.dtgv_XeGui.Size = new System.Drawing.Size(898, 448);
+            this.dtgv_XeGui.Size = new System.Drawing.Size(748, 448);
             this.dtgv_XeGui.TabIndex = 18;
             this.dtgv_XeGui.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_XeGui_CellDoubleClick);
             // 
@@ -191,7 +180,7 @@
             this.lbl_Search.Location = new System.Drawing.Point(650, 14);
             this.lbl_Search.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_Search.Name = "lbl_Search";
-            this.lbl_Search.Size = new System.Drawing.Size(385, 20);
+            this.lbl_Search.Size = new System.Drawing.Size(331, 17);
             this.lbl_Search.TabIndex = 19;
             this.lbl_Search.Text = "Nhập giá trị mã vé hoặc biển số để tìm kiếm:";
             // 
@@ -200,7 +189,7 @@
             this.txb_Search.Location = new System.Drawing.Point(1062, 14);
             this.txb_Search.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txb_Search.Name = "txb_Search";
-            this.txb_Search.Size = new System.Drawing.Size(306, 27);
+            this.txb_Search.Size = new System.Drawing.Size(306, 23);
             this.txb_Search.TabIndex = 20;
             // 
             // btn_Search
@@ -216,7 +205,7 @@
             // 
             // btn_Reset
             // 
-            this.btn_Reset.Location = new System.Drawing.Point(854, 648);
+            this.btn_Reset.Location = new System.Drawing.Point(635, 648);
             this.btn_Reset.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(180, 66);
@@ -259,7 +248,7 @@
             // 
             // btn_ThongKe
             // 
-            this.btn_ThongKe.Location = new System.Drawing.Point(1062, 648);
+            this.btn_ThongKe.Location = new System.Drawing.Point(827, 648);
             this.btn_ThongKe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btn_ThongKe.Name = "btn_ThongKe";
             this.btn_ThongKe.Size = new System.Drawing.Size(175, 66);
@@ -274,7 +263,7 @@
             this.lbl_LoaiVe.Location = new System.Drawing.Point(22, 588);
             this.lbl_LoaiVe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_LoaiVe.Name = "lbl_LoaiVe";
-            this.lbl_LoaiVe.Size = new System.Drawing.Size(76, 20);
+            this.lbl_LoaiVe.Size = new System.Drawing.Size(66, 17);
             this.lbl_LoaiVe.TabIndex = 26;
             this.lbl_LoaiVe.Text = "Loại vé:";
             // 
@@ -289,14 +278,14 @@
             this.cb_LoaiVe.Location = new System.Drawing.Point(197, 588);
             this.cb_LoaiVe.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cb_LoaiVe.Name = "cb_LoaiVe";
-            this.cb_LoaiVe.Size = new System.Drawing.Size(218, 28);
+            this.cb_LoaiVe.Size = new System.Drawing.Size(218, 25);
             this.cb_LoaiVe.TabIndex = 27;
             // 
             // frmGuiXe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1550, 719);
+            this.ClientSize = new System.Drawing.Size(1370, 719);
             this.Controls.Add(this.cb_LoaiVe);
             this.Controls.Add(this.lbl_LoaiVe);
             this.Controls.Add(this.btn_ThongKe);
@@ -308,7 +297,6 @@
             this.Controls.Add(this.lbl_Search);
             this.Controls.Add(this.dtgv_XeGui);
             this.Controls.Add(this.btn_Sua);
-            this.Controls.Add(this.btn_Xoa);
             this.Controls.Add(this.btn_VaoBen);
             this.Controls.Add(this.ptb_HinhAnh);
             this.Controls.Add(this.cb_LoaiXe);
@@ -344,7 +332,6 @@
         private System.Windows.Forms.TextBox txb_HieuXe;
         private System.Windows.Forms.PictureBox ptb_HinhAnh;
         private System.Windows.Forms.Button btn_VaoBen;
-        private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_Sua;
         private System.Windows.Forms.DataGridView dtgv_XeGui;
         private System.Windows.Forms.Label lbl_Search;

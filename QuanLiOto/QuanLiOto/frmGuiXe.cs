@@ -190,5 +190,7 @@ namespace QuanLiOto
             frmThongKeDoanhThu frmThongKeDoanhThu = new frmThongKeDoanhThu();
             frmThongKeDoanhThu.ShowDialog(this);
         }
+
+
     }
 }

@@ -125,12 +125,12 @@ namespace QuanLiOto
                 + "VALUES(@mave, @bienso, @loaixe, @hieuxe, @hinhanh, @giovaoben, @ngayvaoben,@loaive,@gioraben,@ngayraben,@tongtien)", mydb.getConnection);
             command.Parameters.Add("@mave", SqlDbType.Int).Value = mave;
             command.Parameters.Add("@bienso", SqlDbType.VarChar).Value = bienso;
-            command.Parameters.Add("@loaixe", SqlDbType.VarChar).Value = loaixe;
+            command.Parameters.Add("@loaixe", SqlDbType.NVarChar).Value = loaixe;
             command.Parameters.Add("@hieuxe", SqlDbType.VarChar).Value = hieuxe;
             command.Parameters.Add("@hinhanh", SqlDbType.Image).Value = hinhanh.ToArray();
             command.Parameters.Add("@giovaoben", SqlDbType.Time).Value = giovaoben;
             command.Parameters.Add("@ngayvaoben", SqlDbType.DateTime).Value = ngayvaoben;
-            command.Parameters.Add("@loaive", SqlDbType.VarChar).Value = loaive;
+            command.Parameters.Add("@loaive", SqlDbType.NVarChar).Value = loaive;
             command.Parameters.Add("@gioraben", SqlDbType.Time).Value = gioraben;
             command.Parameters.Add("@ngayraben", SqlDbType.DateTime).Value = ngayraben;
             command.Parameters.Add("@tongtien", SqlDbType.Int).Value = tongtien;
