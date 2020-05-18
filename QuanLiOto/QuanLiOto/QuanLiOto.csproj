@@ -57,50 +57,79 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmChinhSuaDanhSachXeGui.cs">
+    <Compile Include="FrmQLDSThue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChinhSuaDanhSachXeGui.Designer.cs">
+    <Compile Include="FrmQLDSThue.Designer.cs">
+      <DependentUpon>FrmQLDSThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThanhToanXeThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThanhToanXeThue.Designer.cs">
+      <DependentUpon>FrmThanhToanXeThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThemDSThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThemDSThue.Designer.cs">
+      <DependentUpon>FrmThemDSThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLGuiXe\frmChinhSuaDanhSachXeGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLGuiXe\frmChinhSuaDanhSachXeGui.Designer.cs">
       <DependentUpon>frmChinhSuaDanhSachXeGui.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGuiXe.cs">
+    <Compile Include="QLGuiXe\frmGuiXe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGuiXe.Designer.cs">
+    <Compile Include="QLGuiXe\frmGuiXe.Designer.cs">
       <DependentUpon>frmGuiXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmThanhToan.cs">
+    <Compile Include="QLGuiXe\FrmThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmThanhToan.Designer.cs">
+    <Compile Include="QLGuiXe\FrmThanhToan.Designer.cs">
       <DependentUpon>FrmThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThongKeDoanhThu.cs">
+    <Compile Include="QLGuiXe\frmThongKeDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmThongKeDoanhThu.Designer.cs">
+    <Compile Include="QLGuiXe\frmThongKeDoanhThu.Designer.cs">
       <DependentUpon>frmThongKeDoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuiXe.cs" />
+    <Compile Include="QLGuiXe\GuiXe.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="My_DB.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="CONTROL\My_DB.cs" />
+    <Compile Include="CONTROL\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmChinhSuaDanhSachXeGui.resx">
+    <Compile Include="QLThue.cs" />
+    <Compile Include="QLThanhToanXeThue.cs" />
+    <EmbeddedResource Include="FrmQLDSThue.resx">
+      <DependentUpon>FrmQLDSThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThanhToanXeThue.resx">
+      <DependentUpon>FrmThanhToanXeThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThemDSThue.resx">
+      <DependentUpon>FrmThemDSThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLGuiXe\frmChinhSuaDanhSachXeGui.resx">
       <DependentUpon>frmChinhSuaDanhSachXeGui.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGuiXe.resx">
+    <EmbeddedResource Include="QLGuiXe\frmGuiXe.resx">
       <DependentUpon>frmGuiXe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmThanhToan.resx">
+    <EmbeddedResource Include="QLGuiXe\FrmThanhToan.resx">
       <DependentUpon>FrmThanhToan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmThongKeDoanhThu.resx">
+    <EmbeddedResource Include="QLGuiXe\frmThongKeDoanhThu.resx">
       <DependentUpon>frmThongKeDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -145,6 +174,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\ImageGuiXe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\tải xuống.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
