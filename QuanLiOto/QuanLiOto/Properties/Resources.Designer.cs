@@ -63,6 +63,16 @@ namespace QuanLiOto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dklichlamviec {
+            get {
+                object obj = ResourceManager.GetObject("dklichlamviec", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ImageGuiXe {
             get {
                 object obj = ResourceManager.GetObject("ImageGuiXe", resourceCulture);

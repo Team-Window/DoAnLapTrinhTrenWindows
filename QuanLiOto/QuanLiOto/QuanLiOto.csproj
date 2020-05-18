@@ -52,27 +52,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChamCong.cs" />
+    <Compile Include="dangkylichlamviec.cs" />
     <Compile Include="DoAnLapTrinhTrenWIndowsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmQLDSThue.cs">
+    <Compile Include="FrmCreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmQLDSThue.Designer.cs">
+    <Compile Include="FrmCreateAccount.Designer.cs">
+      <DependentUpon>FrmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangKyLichLamViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangKyLichLamViec.Designer.cs">
+      <DependentUpon>FrmDangKyLichLamViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDanhChoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhChoNhanVien.Designer.cs">
+      <DependentUpon>FrmDanhChoNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="login.cs" />
+    <Compile Include="Log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in.Designer.cs">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLThueXe\FrmQLDSThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\FrmQLDSThue.Designer.cs">
       <DependentUpon>FrmQLDSThue.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmThanhToanXeThue.cs">
+    <Compile Include="QLThueXe\FrmThanhToanXeThue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmThanhToanXeThue.Designer.cs">
+    <Compile Include="QLThueXe\FrmThanhToanXeThue.Designer.cs">
       <DependentUpon>FrmThanhToanXeThue.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmThemDSThue.cs">
+    <Compile Include="QLThueXe\FrmThemDSThue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmThemDSThue.Designer.cs">
+    <Compile Include="QLThueXe\FrmThemDSThue.Designer.cs">
       <DependentUpon>FrmThemDSThue.cs</DependentUpon>
     </Compile>
     <Compile Include="QLGuiXe\frmChinhSuaDanhSachXeGui.cs">
@@ -109,15 +137,27 @@
     <Compile Include="CONTROL\My_DB.cs" />
     <Compile Include="CONTROL\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLThue.cs" />
-    <Compile Include="QLThanhToanXeThue.cs" />
-    <EmbeddedResource Include="FrmQLDSThue.resx">
+    <Compile Include="QLThueXe\QLThue.cs" />
+    <Compile Include="QLThueXe\QLThanhToanXeThue.cs" />
+    <EmbeddedResource Include="FrmCreateAccount.resx">
+      <DependentUpon>FrmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangKyLichLamViec.resx">
+      <DependentUpon>FrmDangKyLichLamViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhChoNhanVien.resx">
+      <DependentUpon>FrmDanhChoNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in.resx">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLThueXe\FrmQLDSThue.resx">
       <DependentUpon>FrmQLDSThue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmThanhToanXeThue.resx">
+    <EmbeddedResource Include="QLThueXe\FrmThanhToanXeThue.resx">
       <DependentUpon>FrmThanhToanXeThue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmThemDSThue.resx">
+    <EmbeddedResource Include="QLThueXe\FrmThemDSThue.resx">
       <DependentUpon>FrmThemDSThue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLGuiXe\frmChinhSuaDanhSachXeGui.resx">
@@ -177,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\dklichlamviec.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
