@@ -40,3 +40,10 @@ D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\Qua
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.csproj.CoreCompileInputs.cache
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.exe
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.pdb
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmThemDSThue.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmQLDSThue.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmThanhToanXeThue.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmDangKyLichLamViec.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmDanhChoNhanVien.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.Log_in.resources
+D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmCreateAccount.resources

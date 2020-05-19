@@ -63,6 +63,16 @@ namespace QuanLiOto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dklichlamviec {
+            get {
+                object obj = ResourceManager.GetObject("dklichlamviec", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ImageGuiXe {
             get {
                 object obj = ResourceManager.GetObject("ImageGuiXe", resourceCulture);
@@ -76,6 +86,16 @@ namespace QuanLiOto.Properties {
         internal static System.Drawing.Bitmap ImageXeDap {
             get {
                 object obj = ResourceManager.GetObject("ImageXeDap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tải_xuống {
+            get {
+                object obj = ResourceManager.GetObject("tải xuống", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

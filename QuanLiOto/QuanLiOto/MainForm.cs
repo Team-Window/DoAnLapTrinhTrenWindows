@@ -32,5 +32,11 @@ namespace QuanLiOto
         {
             
         }
+
+        private void btn_XeThue_Click(object sender, EventArgs e)
+        {
+            FrmQLDSThue qLDSThue = new FrmQLDSThue();
+            qLDSThue.ShowDialog(this);
+        }
     }
 }

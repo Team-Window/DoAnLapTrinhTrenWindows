@@ -52,55 +52,124 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChamCong.cs" />
+    <Compile Include="dangkylichlamviec.cs" />
     <Compile Include="DoAnLapTrinhTrenWIndowsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmChinhSuaDanhSachXeGui.cs">
+    <Compile Include="FrmCreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChinhSuaDanhSachXeGui.Designer.cs">
+    <Compile Include="FrmCreateAccount.Designer.cs">
+      <DependentUpon>FrmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangKyLichLamViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangKyLichLamViec.Designer.cs">
+      <DependentUpon>FrmDangKyLichLamViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDanhChoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhChoNhanVien.Designer.cs">
+      <DependentUpon>FrmDanhChoNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="login.cs" />
+    <Compile Include="Log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in.Designer.cs">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLThueXe\FrmQLDSThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\FrmQLDSThue.Designer.cs">
+      <DependentUpon>FrmQLDSThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLThueXe\FrmThanhToanXeThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\FrmThanhToanXeThue.Designer.cs">
+      <DependentUpon>FrmThanhToanXeThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLThueXe\FrmThemDSThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\FrmThemDSThue.Designer.cs">
+      <DependentUpon>FrmThemDSThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLGuiXe\frmChinhSuaDanhSachXeGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLGuiXe\frmChinhSuaDanhSachXeGui.Designer.cs">
       <DependentUpon>frmChinhSuaDanhSachXeGui.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGuiXe.cs">
+    <Compile Include="QLGuiXe\frmGuiXe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGuiXe.Designer.cs">
+    <Compile Include="QLGuiXe\frmGuiXe.Designer.cs">
       <DependentUpon>frmGuiXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmThanhToan.cs">
+    <Compile Include="QLGuiXe\FrmThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmThanhToan.Designer.cs">
+    <Compile Include="QLGuiXe\FrmThanhToan.Designer.cs">
       <DependentUpon>FrmThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThongKeDoanhThu.cs">
+    <Compile Include="QLGuiXe\frmThongKeDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmThongKeDoanhThu.Designer.cs">
+    <Compile Include="QLGuiXe\frmThongKeDoanhThu.Designer.cs">
       <DependentUpon>frmThongKeDoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuiXe.cs" />
+    <Compile Include="QLGuiXe\GuiXe.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="My_DB.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="CONTROL\My_DB.cs" />
+    <Compile Include="CONTROL\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmChinhSuaDanhSachXeGui.resx">
+    <Compile Include="QLThueXe\QLThue.cs" />
+    <Compile Include="QLThueXe\QLThanhToanXeThue.cs" />
+    <EmbeddedResource Include="FrmCreateAccount.resx">
+      <DependentUpon>FrmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangKyLichLamViec.resx">
+      <DependentUpon>FrmDangKyLichLamViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhChoNhanVien.resx">
+      <DependentUpon>FrmDanhChoNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in.resx">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLThueXe\FrmQLDSThue.resx">
+      <DependentUpon>FrmQLDSThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLThueXe\FrmThanhToanXeThue.resx">
+      <DependentUpon>FrmThanhToanXeThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLThueXe\FrmThemDSThue.resx">
+      <DependentUpon>FrmThemDSThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLGuiXe\frmChinhSuaDanhSachXeGui.resx">
       <DependentUpon>frmChinhSuaDanhSachXeGui.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGuiXe.resx">
+    <EmbeddedResource Include="QLGuiXe\frmGuiXe.resx">
       <DependentUpon>frmGuiXe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmThanhToan.resx">
+    <EmbeddedResource Include="QLGuiXe\FrmThanhToan.resx">
       <DependentUpon>FrmThanhToan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmThongKeDoanhThu.resx">
+    <EmbeddedResource Include="QLGuiXe\frmThongKeDoanhThu.resx">
       <DependentUpon>frmThongKeDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -145,6 +214,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\ImageGuiXe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\dklichlamviec.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
