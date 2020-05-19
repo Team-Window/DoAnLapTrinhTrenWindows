@@ -28,6 +28,8 @@ namespace QuanLiOto
         {
             // TODO: This line of code loads data into the 'doAnLapTrinhTrenWIndowsDataSet.ThongKe' table. You can move, or remove it, as needed.
             this.thongKeTableAdapter.Fill(this.doAnLapTrinhTrenWIndowsDataSet.ThongKe);
+            // TODO: This line of code loads data into the 'doAnLapTrinhTrenWIndowsDataSet.ThongKe' table. You can move, or remove it, as needed.
+            this.thongKeTableAdapter.Fill(this.doAnLapTrinhTrenWIndowsDataSet.ThongKe);
             SqlCommand command = new SqlCommand("SELECT * FROM ThongKe");
             dataGridView1.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
@@ -56,17 +58,17 @@ namespace QuanLiOto
             string date1 = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             if (RadioBtXedap.Checked)
                 {
-                    query = "SELECT * FROM ThongKe WHERE loaixe='Xe dap'AND ngayraben="+date1;
+                    query = "SELECT * FROM ThongKe WHERE loaixe='Xe đạp'AND ngayraben="+date1;
                         
                 }
                 else if (RadioBtXemay.Checked)
                 {
-                    query = "SELECT * FROM ThongKe WHERE loaixe='Xe may'AND ngayraben='" + date1 + "'";
+                    query = "SELECT * FROM ThongKe WHERE loaixe='Xe máy'AND ngayraben='" + date1 + "'";
                 
                 }
                 else if (RadioBtXehoi.Checked)
                 {
-                    query = "SELECT * FROM ThongKe WHERE loaixe='Xe hoi'AND ngayraben='"+date1 + "'";
+                    query = "SELECT * FROM ThongKe WHERE loaixe='Xe hơi'AND ngayraben='"+date1 + "'";
                 
                 }
                 else
