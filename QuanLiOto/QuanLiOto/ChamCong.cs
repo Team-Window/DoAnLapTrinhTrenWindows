@@ -30,5 +30,24 @@ namespace QuanLiOto
                 return false;
             }
         }
+
+        public bool deleteBangChamCong(int iduser)
+        {
+            SqlCommand command = new SqlCommand("DELETE FROM bangchamcong WHERE iduser=@id", mydb.getConnection);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = iduser;
+            mydb.openConnection();
+            if ((command.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
+
+
     }
 }

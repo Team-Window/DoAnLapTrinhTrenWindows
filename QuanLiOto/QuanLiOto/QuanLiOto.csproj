@@ -59,6 +59,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmBangPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBangPhanCong.Designer.cs">
+      <DependentUpon>FrmBangPhanCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,30 @@
     <Compile Include="FrmDanhChoNhanVien.Designer.cs">
       <DependentUpon>FrmDanhChoNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDanhChoQuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhChoQuanLi.Designer.cs">
+      <DependentUpon>FrmDanhChoQuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThanhToanLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThanhToanLuong.Designer.cs">
+      <DependentUpon>FrmThanhToanLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThongKePhieuThanhToanLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThongKePhieuThanhToanLuong.Designer.cs">
+      <DependentUpon>FrmThongKePhieuThanhToanLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXemLuongThuongDanhChoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXemLuongThuongDanhChoNhanVien.Designer.cs">
+      <DependentUpon>FrmXemLuongThuongDanhChoNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Globals.cs" />
     <Compile Include="login.cs" />
     <Compile Include="Log_in.cs">
@@ -85,6 +115,8 @@
     <Compile Include="Log_in.Designer.cs">
       <DependentUpon>Log_in.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLLuongThuong.cs" />
+    <Compile Include="QLPhieuThanhToan.cs" />
     <Compile Include="QLThueXe\FrmQLDSThue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +171,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLThueXe\QLThue.cs" />
     <Compile Include="QLThueXe\QLThanhToanXeThue.cs" />
+    <EmbeddedResource Include="FrmBangPhanCong.resx">
+      <DependentUpon>FrmBangPhanCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCreateAccount.resx">
       <DependentUpon>FrmCreateAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +182,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDanhChoNhanVien.resx">
       <DependentUpon>FrmDanhChoNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhChoQuanLi.resx">
+      <DependentUpon>FrmDanhChoQuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThanhToanLuong.resx">
+      <DependentUpon>FrmThanhToanLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThongKePhieuThanhToanLuong.resx">
+      <DependentUpon>FrmThongKePhieuThanhToanLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXemLuongThuongDanhChoNhanVien.resx">
+      <DependentUpon>FrmXemLuongThuongDanhChoNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
@@ -220,6 +267,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\dklichlamviec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\lamviec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\luong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phancong.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
