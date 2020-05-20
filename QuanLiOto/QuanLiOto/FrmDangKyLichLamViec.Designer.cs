@@ -40,6 +40,8 @@
             this.cb_Ca = new System.Windows.Forms.ComboBox();
             this.btn_DangKy = new System.Windows.Forms.Button();
             this.lbl_Huy = new System.Windows.Forms.Button();
+            this.dtgv_DKLichLamViec = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_DKLichLamViec)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_ID
@@ -130,7 +132,7 @@
             // 
             // btn_DangKy
             // 
-            this.btn_DangKy.Location = new System.Drawing.Point(36, 192);
+            this.btn_DangKy.Location = new System.Drawing.Point(18, 192);
             this.btn_DangKy.Name = "btn_DangKy";
             this.btn_DangKy.Size = new System.Drawing.Size(111, 35);
             this.btn_DangKy.TabIndex = 10;
@@ -140,7 +142,7 @@
             // 
             // lbl_Huy
             // 
-            this.lbl_Huy.Location = new System.Drawing.Point(173, 192);
+            this.lbl_Huy.Location = new System.Drawing.Point(147, 192);
             this.lbl_Huy.Name = "lbl_Huy";
             this.lbl_Huy.Size = new System.Drawing.Size(99, 35);
             this.lbl_Huy.TabIndex = 11;
@@ -148,11 +150,21 @@
             this.lbl_Huy.UseVisualStyleBackColor = true;
             this.lbl_Huy.Click += new System.EventHandler(this.lbl_Huy_Click);
             // 
+            // dtgv_DKLichLamViec
+            // 
+            this.dtgv_DKLichLamViec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_DKLichLamViec.Location = new System.Drawing.Point(267, 1);
+            this.dtgv_DKLichLamViec.Name = "dtgv_DKLichLamViec";
+            this.dtgv_DKLichLamViec.Size = new System.Drawing.Size(459, 244);
+            this.dtgv_DKLichLamViec.TabIndex = 12;
+            this.dtgv_DKLichLamViec.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_DKLichLamViec_CellClick);
+            // 
             // FrmDangKyLichLamViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 239);
+            this.ClientSize = new System.Drawing.Size(728, 248);
+            this.Controls.Add(this.dtgv_DKLichLamViec);
             this.Controls.Add(this.lbl_Huy);
             this.Controls.Add(this.btn_DangKy);
             this.Controls.Add(this.cb_Ca);
@@ -167,6 +179,8 @@
             this.Controls.Add(this.lbl_ID);
             this.Name = "FrmDangKyLichLamViec";
             this.Text = "FrmDangKyLichLamViec";
+            this.Load += new System.EventHandler(this.FrmDangKyLichLamViec_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_DKLichLamViec)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +200,6 @@
         public System.Windows.Forms.TextBox txb_ID;
         public System.Windows.Forms.TextBox txb_FirstName;
         public System.Windows.Forms.TextBox txb_LastName;
+        private System.Windows.Forms.DataGridView dtgv_DKLichLamViec;
     }
 }

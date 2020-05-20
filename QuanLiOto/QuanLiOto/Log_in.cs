@@ -53,7 +53,10 @@ namespace QuanLiOto
                 {
                     int userid = Convert.ToUInt16(table.Rows[0][0].ToString());
                     Globals.SetGlobalUserId(userid);
-
+                    DateTime giovaolam = DateTime.Now;
+                    Globals.SetGlobalUserGioVaoLam(giovaolam);
+                    FrmDanhChoQuanLi quanli = new FrmDanhChoQuanLi();
+                    quanli.ShowDialog(this);
                 }
             }
             else

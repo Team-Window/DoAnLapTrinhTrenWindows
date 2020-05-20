@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace QuanLiOto
             InitializeComponent();
         }
         dangkylichlamviec dklichlamviec = new dangkylichlamviec();
+        login log = new login();
         private void lbl_Huy_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -24,6 +26,10 @@ namespace QuanLiOto
 
         private void btn_DangKy_Click(object sender, EventArgs e)
         {
+            if (txb_ID.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa chọn đối tượng lập lịch", "Đăng ký lịch làm việc. Vui lòng chọn đối tượng ở bảng phải.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             int iduser = Convert.ToInt32(txb_ID.Text);
             string fname = txb_FirstName.Text;
             string lname = txb_LastName.Text;
@@ -58,6 +64,21 @@ namespace QuanLiOto
                 }
 
             }
+        }
+
+        private void FrmDangKyLichLamViec_Load(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("SELECT * FROM [user] WHERE chucvu = 'Nhân viên'");
+            DataTable table = log.getUser(command);
+            dtgv_DKLichLamViec.DataSource = table;
+        }
+
+        private void dtgv_DKLichLamViec_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txb_ID.Text = dtgv_DKLichLamViec.CurrentRow.Cells[0].ToString();
+            txb_FirstName.Text = dtgv_DKLichLamViec.CurrentRow.Cells[1].ToString();
+            txb_LastName.Text = dtgv_DKLichLamViec.CurrentRow.Cells[2].ToString();
+
         }
     }
 }
