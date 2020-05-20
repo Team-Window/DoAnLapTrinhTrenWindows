@@ -11,7 +11,6 @@ using System.Windows.Forms;
 
 namespace QuanLiOto
 {
-    // Sửa ở đây
     public partial class FrmDanhChoNhanVien : Form
     {
         public FrmDanhChoNhanVien()
@@ -19,7 +18,7 @@ namespace QuanLiOto
             InitializeComponent();
         }
         login log = new login();
-        //QLLuongThuong luongthuong = new QLLuongThuong();
+        QLLuongThuong luongthuong = new QLLuongThuong();
         private void btn_DangKy_Click(object sender, EventArgs e)
         {
             MainForm mainform = new MainForm();
@@ -38,7 +37,7 @@ namespace QuanLiOto
                 TimeSpan tinhgiotanlam = giotanlam.TimeOfDay;
                 float tongsogiolam = (float)(tinhgiotanlam - tinhgiovaolam).TotalHours;
                 int tienluong = TinhTienLuongNhanVien(tongsogiolam);
-                //luongthuong.insertQLLuongThuong(Globals.GlobalUserId, table.Rows[0][1].ToString(), table.Rows[0][2].ToString(), DateTime.Now.Date, tongsogiolam, tienluong);
+                luongthuong.insertQLLuongThuong(Globals.GlobalUserId, table.Rows[0][1].ToString(), table.Rows[0][2].ToString(), DateTime.Now.Date, tongsogiolam, tienluong);
                 this.Close();
             }
         }

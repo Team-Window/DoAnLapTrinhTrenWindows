@@ -55,8 +55,8 @@ namespace QuanLiOto
                     Globals.SetGlobalUserId(userid);
                     DateTime giovaolam = DateTime.Now;
                     Globals.SetGlobalUserGioVaoLam(giovaolam);
-                    //FrmDanhChoQuanLi quanli = new FrmDanhChoQuanLi();
-                    //quanli.ShowDialog(this);
+                    FrmDanhChoQuanLi quanli = new FrmDanhChoQuanLi();
+                    quanli.ShowDialog(this);
                 }
             }
             else
