@@ -12,14 +12,15 @@ namespace QuanLiOto
     class QLThanhToanXeThue
     {
         My_DB mydb = new My_DB();
-        public bool insertThanhToanXeThue(string fname, string lname, string cmnd, string loaixe, string bienso, MemoryStream anh, DateTime ngayhd, int trigiahd, DateTime ngaygiaoxe, DateTime ngayhethanthue, DateTime ngaytraxe, float sotienphaitra)
+        public bool insertThanhToanXeThue(string fname, string lname, string cmnd, string loaixe, string bienso,string loaihopdong, MemoryStream anh, DateTime ngayhd, int trigiahd, DateTime ngaygiaoxe, DateTime ngayhethanthue, DateTime ngaytraxe, float sotienphaitra)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO thanhtoanxethue(fname, lname, cmnd, loaixe, bienso, anh, ngayhd, trigiahd, ngaygiaoxe, ngayhethanthue, ngaytraxe, sotienphaitra) VALUES (@fname, @lname, @cmnd, @loaixe, @bienso, @anh, @ngayhd, @trigiahd, @ngaygiaoxe, @ngayhethanthue, @ngaytraxe, @sotienphaitra)", mydb.getConnection);
+            SqlCommand command = new SqlCommand("INSERT INTO thanhtoanxethue(fname, lname, cmnd, loaixe, bienso,loaihopdong, anh, ngayhd, trigiahd, ngaygiaoxe, ngayhethanthue, ngaytraxe, sotienphaitra) VALUES (@fname, @lname, @cmnd, @loaixe, @bienso,@loaihopdong, @anh, @ngayhd, @trigiahd, @ngaygiaoxe, @ngayhethanthue, @ngaytraxe, @sotienphaitra)", mydb.getConnection);
             command.Parameters.Add("@fname", SqlDbType.VarChar).Value = fname;
             command.Parameters.Add("@lname", SqlDbType.VarChar).Value = lname;
             command.Parameters.Add("@cmnd", SqlDbType.VarChar).Value = cmnd;
             command.Parameters.Add("@loaixe", SqlDbType.NVarChar).Value = loaixe;
             command.Parameters.Add("@bienso", SqlDbType.VarChar).Value = bienso;
+            command.Parameters.Add("@loaihopdong", SqlDbType.NVarChar).Value = loaihopdong;
             command.Parameters.Add("@anh", SqlDbType.Image).Value = anh.ToArray();
             command.Parameters.Add("@ngayhd", SqlDbType.Date).Value = ngayhd;
             command.Parameters.Add("@trigiahd", SqlDbType.Int).Value = trigiahd;
@@ -39,6 +40,14 @@ namespace QuanLiOto
                 mydb.closeConnection();
                 return false;
             }
+        }
+        public DataTable getDoanhThu(SqlCommand command)
+        {
+            command.Connection = mydb.getConnection;
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
         }
     }
 }

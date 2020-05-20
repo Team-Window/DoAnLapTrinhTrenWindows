@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -109,7 +110,7 @@ namespace QuanLiOto
             else
             {
                 int id = Convert.ToInt32(txb_ID.Text);
-                DataTable table = qlthue.getXeThueByID(id);
+                System.Data.DataTable table = qlthue.getXeThueByID(id);
                 if (table.Rows.Count > 0)
                 {
                     txb_FirstName.Text = table.Rows[0][1].ToString();
@@ -182,7 +183,7 @@ namespace QuanLiOto
 
         private void FrmQLDSThue_Load(object sender, EventArgs e)
         {
-            fillGrid(new SqlCommand("SELECT * FROM thue"));
+            fillGrid(new SqlCommand("SELECT * FROM thue Where fname is not null and lname is not null and ngayhd is not null and ngaygiaoxe is not null"));
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
@@ -193,7 +194,7 @@ namespace QuanLiOto
 
         private void btn_TaoMoi_Click(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM thue");
+            SqlCommand command = new SqlCommand("SELECT * FROM thue Where fname is not null and lname is not null and ngayhd is not null and ngaygiaoxe is not null");
             fillGrid(command);
         }
 
@@ -230,6 +231,20 @@ namespace QuanLiOto
 
         private void btn_TraXe_Click(object sender, EventArgs e)
         {
+            if(txb_GiayPhepXe.Text=="Cho thuê")
+            {
+                for (int i = 0; i < dtgv_DSThue.Rows.Count; i++)
+                {
+                    string loaihopdong = dtgv_DSThue.Rows[i].Cells[7].Value.ToString();
+                    string bienso = dtgv_DSThue.Rows[i].Cells[6].Value.ToString();
+                    if((loaihopdong=="Thuê")&&(txb_BienSo.Text==bienso))
+                    {
+                        MessageBox.Show("Xe đang được cho người khác thuê", "Không có xe trong kho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }    
+                }
+            }    
+                
             FrmThanhToanXeThue thanhtoanxethue = new FrmThanhToanXeThue();
             if (txb_ID.Text.Trim() == "")
             {
@@ -238,7 +253,7 @@ namespace QuanLiOto
             else
             {
                 int id = Convert.ToInt32(txb_ID.Text);
-                DataTable table = qlthue.getXeThueByID(id);
+                System.Data.DataTable table = qlthue.getXeThueByID(id);
                 if (table.Rows.Count > 0)
                 {
                     thanhtoanxethue.txb_ID.Text = txb_ID.Text;
@@ -260,6 +275,7 @@ namespace QuanLiOto
                     }
                     thanhtoanxethue.txb_HieuXe.Text = table.Rows[0][5].ToString();
                     thanhtoanxethue.txb_BienSo.Text = table.Rows[0][6].ToString();
+                    thanhtoanxethue.cb_loaihopdong.Text = table.Rows[0][7].ToString();
                     byte[] pic = (byte[])table.Rows[0][8];
                     MemoryStream picture = new MemoryStream(pic);
                     thanhtoanxethue.ptb_Anh.Image = Image.FromStream(picture);
@@ -301,6 +317,11 @@ namespace QuanLiOto
             txb_TriGiaHD.Text = dtgv_DSThue.CurrentRow.Cells[10].Value.ToString();
             dtp_NgayGiaoXe.Value = (DateTime)dtgv_DSThue.CurrentRow.Cells[11].Value;
             dtp_NgayHetHanThue.Value = (DateTime)dtgv_DSThue.CurrentRow.Cells[12].Value;
+        }
+
+        private void btn_ThongKe_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

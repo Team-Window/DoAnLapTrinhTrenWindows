@@ -59,12 +59,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmBangPhanCong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmBangPhanCong.Designer.cs">
-      <DependentUpon>FrmBangPhanCong.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmCreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,30 +77,6 @@
     <Compile Include="FrmDanhChoNhanVien.Designer.cs">
       <DependentUpon>FrmDanhChoNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDanhChoQuanLi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmDanhChoQuanLi.Designer.cs">
-      <DependentUpon>FrmDanhChoQuanLi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmThanhToanLuong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmThanhToanLuong.Designer.cs">
-      <DependentUpon>FrmThanhToanLuong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmThongKePhieuThanhToanLuong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmThongKePhieuThanhToanLuong.Designer.cs">
-      <DependentUpon>FrmThongKePhieuThanhToanLuong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmXemLuongThuongDanhChoNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmXemLuongThuongDanhChoNhanVien.Designer.cs">
-      <DependentUpon>FrmXemLuongThuongDanhChoNhanVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="Globals.cs" />
     <Compile Include="login.cs" />
     <Compile Include="Log_in.cs">
@@ -115,13 +85,29 @@
     <Compile Include="Log_in.Designer.cs">
       <DependentUpon>Log_in.cs</DependentUpon>
     </Compile>
-    <Compile Include="QLLuongThuong.cs" />
-    <Compile Include="QLPhieuThanhToan.cs" />
+    <Compile Include="QLThueXe\FormThongKeXeChoThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\FormThongKeXeChoThue.Designer.cs">
+      <DependentUpon>FormThongKeXeChoThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLThueXe\FrmCacXechothue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\FrmCacXechothue.Designer.cs">
+      <DependentUpon>FrmCacXechothue.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLThueXe\FrmQLDSThue.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QLThueXe\FrmQLDSThue.Designer.cs">
       <DependentUpon>FrmQLDSThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLThueXe\FrmQuanliXecuaCongTy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\FrmQuanliXecuaCongTy.Designer.cs">
+      <DependentUpon>FrmQuanliXecuaCongTy.cs</DependentUpon>
     </Compile>
     <Compile Include="QLThueXe\FrmThanhToanXeThue.cs">
       <SubType>Form</SubType>
@@ -169,11 +155,20 @@
     <Compile Include="CONTROL\My_DB.cs" />
     <Compile Include="CONTROL\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLThueXe\FrmXecuaCongTy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\FrmXecuaCongTy.Designer.cs">
+      <DependentUpon>FrmXecuaCongTy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLThueXe\MainFormThueXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThueXe\MainFormThueXe.Designer.cs">
+      <DependentUpon>MainFormThueXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLThueXe\QLThue.cs" />
     <Compile Include="QLThueXe\QLThanhToanXeThue.cs" />
-    <EmbeddedResource Include="FrmBangPhanCong.resx">
-      <DependentUpon>FrmBangPhanCong.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmCreateAccount.resx">
       <DependentUpon>FrmCreateAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,23 +178,20 @@
     <EmbeddedResource Include="FrmDanhChoNhanVien.resx">
       <DependentUpon>FrmDanhChoNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDanhChoQuanLi.resx">
-      <DependentUpon>FrmDanhChoQuanLi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmThanhToanLuong.resx">
-      <DependentUpon>FrmThanhToanLuong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmThongKePhieuThanhToanLuong.resx">
-      <DependentUpon>FrmThongKePhieuThanhToanLuong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmXemLuongThuongDanhChoNhanVien.resx">
-      <DependentUpon>FrmXemLuongThuongDanhChoNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QLThueXe\FormThongKeXeChoThue.resx">
+      <DependentUpon>FormThongKeXeChoThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLThueXe\FrmCacXechothue.resx">
+      <DependentUpon>FrmCacXechothue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QLThueXe\FrmQLDSThue.resx">
       <DependentUpon>FrmQLDSThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLThueXe\FrmQuanliXecuaCongTy.resx">
+      <DependentUpon>FrmQuanliXecuaCongTy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLThueXe\FrmThanhToanXeThue.resx">
       <DependentUpon>FrmThanhToanXeThue.cs</DependentUpon>
@@ -232,6 +224,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QLThueXe\FrmXecuaCongTy.resx">
+      <DependentUpon>FrmXecuaCongTy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLThueXe\MainFormThueXe.resx">
+      <DependentUpon>MainFormThueXe.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DoAnLapTrinhTrenWIndowsDataSet.xsc">
       <DependentUpon>DoAnLapTrinhTrenWIndowsDataSet.xsd</DependentUpon>
     </None>
@@ -267,15 +265,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\dklichlamviec.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Image\lamviec.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Image\luong.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Image\phancong.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

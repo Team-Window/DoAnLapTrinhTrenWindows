@@ -14,14 +14,14 @@ namespace QuanLiOto
         My_DB mydb = new My_DB();
         public bool insertXeThue(string fname, string lname, string cmnd, string loaixe, string hieuxe, string bienso, string giayphep, MemoryStream anh, DateTime  ngayhd, int trigiahd, DateTime ngaygiaoxe, DateTime ngayhethanthue)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO thue(fname, lname, cmnd, loaixe, hieuxe, bienso, giayphepxe, anh, ngayhd, trigiahd, ngaygiaoxe, ngayhethanthue) VALUES (@fname, @lname, @cmnd, @loaixe, @hieuxe, @bienso, @giayphepxe, @anh, @ngayhd, @trigiahd, @ngaygiaoxe, @ngayhethanthue)", mydb.getConnection);
+            SqlCommand command = new SqlCommand("INSERT INTO thue(fname, lname, cmnd, loaixe, hieuxe, bienso, loaihopdong, anh, ngayhd, trigiahd, ngaygiaoxe, ngayhethanthue) VALUES (@fname, @lname, @cmnd, @loaixe, @hieuxe, @bienso, @loaihopdong, @anh, @ngayhd, @trigiahd, @ngaygiaoxe, @ngayhethanthue)", mydb.getConnection);
             command.Parameters.Add("@fname", SqlDbType.VarChar).Value = fname;
             command.Parameters.Add("@lname", SqlDbType.VarChar).Value = lname;
             command.Parameters.Add("@cmnd", SqlDbType.VarChar).Value = cmnd;
             command.Parameters.Add("@loaixe", SqlDbType.NVarChar).Value = loaixe;
             command.Parameters.Add("@hieuxe", SqlDbType.VarChar).Value = hieuxe;
             command.Parameters.Add("@bienso", SqlDbType.VarChar).Value = bienso;
-            command.Parameters.Add("@giayphepxe", SqlDbType.VarChar).Value = giayphep;
+            command.Parameters.Add("@loaihopdong", SqlDbType.NVarChar).Value = giayphep;
             command.Parameters.Add("@anh", SqlDbType.Image).Value = anh.ToArray();
             command.Parameters.Add("@ngayhd", SqlDbType.Date).Value = ngayhd;
             command.Parameters.Add("@trigiahd", SqlDbType.Int).Value = trigiahd;
@@ -52,7 +52,7 @@ namespace QuanLiOto
 
         public bool updateXeThue(int id, string fname, string lname, string cmnd, string loaixe, string hieuxe, string bienso, string giayphep, MemoryStream anh, DateTime ngayhd, int trigiahd, DateTime ngaygiaoxe, DateTime ngayhethanthue)
         {
-            SqlCommand command = new SqlCommand("UPDATE thue SET fname=@fname, lname=@lname, cmnd=@cmnd, loaixe=@loaixe, hieuxe=@hieuxe, bienso=@bienso, giayphepxe=@giayphepxe, anh=@anh, ngayhd=@ngayhd, trigiahd=@trigiahd, ngaygiaoxe=@ngaygiaoxe, ngayhethanthue=@ngayhethanthue WHERE id=@id", mydb.getConnection);
+            SqlCommand command = new SqlCommand("UPDATE thue SET fname=@fname, lname=@lname, cmnd=@cmnd, loaixe=@loaixe, hieuxe=@hieuxe, bienso=@bienso, loaihopdong=@loaihopdong, anh=@anh, ngayhd=@ngayhd, trigiahd=@trigiahd, ngaygiaoxe=@ngaygiaoxe, ngayhethanthue=@ngayhethanthue WHERE id=@id", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = id;
             command.Parameters.Add("@fname", SqlDbType.VarChar).Value = fname;
             command.Parameters.Add("@lname", SqlDbType.VarChar).Value = lname;
@@ -60,7 +60,7 @@ namespace QuanLiOto
             command.Parameters.Add("@loaixe", SqlDbType.NVarChar).Value = loaixe;
             command.Parameters.Add("@hieuxe", SqlDbType.VarChar).Value = hieuxe;
             command.Parameters.Add("@bienso", SqlDbType.VarChar).Value = bienso;
-            command.Parameters.Add("@giayphepxe", SqlDbType.VarChar).Value = giayphep;
+            command.Parameters.Add("@loaihopdong", SqlDbType.NVarChar).Value = giayphep;
             command.Parameters.Add("@anh", SqlDbType.Image).Value = anh.ToArray();
             command.Parameters.Add("@ngayhd", SqlDbType.Date).Value = ngayhd;
             command.Parameters.Add("@trigiahd", SqlDbType.Int).Value = trigiahd;
@@ -96,6 +96,10 @@ namespace QuanLiOto
             if (operation == "edit")
             {
                 query = "SELECT * FROM thue WHERE bienso=@bienso AND id<>@id";
+            }
+            if (operation == "Thuê")
+            {
+                query = "SELECT * FROM thue WHERE bienso=@bienso AND loaihopdong='Thuê'";
             }
             SqlCommand command = new SqlCommand(query, mydb.getConnection);
             command.Parameters.Add("@bienso", SqlDbType.VarChar).Value = bienso;
@@ -154,6 +158,45 @@ namespace QuanLiOto
             string count = command.ExecuteScalar().ToString();
             mydb.closeConnection();
             return count;
+        }
+        public DataTable getXechothue(string chothue)
+        {// có thêm ở đây
+            SqlCommand command = new SqlCommand("SELECT loaixe,hieuxe,bienso,anh,ngayhd,trigiahd,ngaygiaoxe,ngayhethanthue FROM thue WHERE loaihopdong=@loaihopdong or loaihopdong='Công ty'", mydb.getConnection);
+            command.Parameters.Add("@loaihopdong", SqlDbType.NVarChar).Value = chothue;
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+        public DataTable getXecuaCongTy()
+        {// có thêm ở đây
+            SqlCommand command = new SqlCommand("SELECT loaixe,hieuxe,bienso,anh,hieuxe as tinhtrang FROM thue WHERE loaihopdong='Công ty'", mydb.getConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+        public bool insertXeCongTy( string loaixe, string hieuxe, string bienso, string giayphep, MemoryStream anh )
+        {
+            SqlCommand command = new SqlCommand("INSERT INTO thue(loaixe, hieuxe, bienso, loaihopdong, anh) VALUES ( @loaixe, @hieuxe, @bienso, @loaihopdong, @anh)", mydb.getConnection);
+            
+            command.Parameters.Add("@loaixe", SqlDbType.NVarChar).Value = loaixe;
+            command.Parameters.Add("@hieuxe", SqlDbType.VarChar).Value = hieuxe;
+            command.Parameters.Add("@bienso", SqlDbType.VarChar).Value = bienso;
+            command.Parameters.Add("@loaihopdong", SqlDbType.NVarChar).Value = giayphep;
+            command.Parameters.Add("@anh", SqlDbType.Image).Value = anh.ToArray();
+
+            mydb.openConnection();
+            if ((command.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
         }
     }
 }

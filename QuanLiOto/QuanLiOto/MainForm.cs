@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLiOto.QLThueXe;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,8 +36,8 @@ namespace QuanLiOto
 
         private void btn_XeThue_Click(object sender, EventArgs e)
         {
-            FrmQLDSThue qLDSThue = new FrmQLDSThue();
-            qLDSThue.ShowDialog(this);
+            MainFormThueXe mainFormThueXe = new MainFormThueXe();
+            mainFormThueXe.Show(this);
         }
     }
 }
