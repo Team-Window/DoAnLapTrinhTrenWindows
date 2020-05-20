@@ -80,7 +80,7 @@ namespace QuanLiOto
              fillGrid(command);
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
-                tongsotien += int.Parse(dataGridView1.Rows[i].Cells[9].Value.ToString());
+                tongsotien += int.Parse(dataGridView1.Rows[i].Cells[14].Value.ToString());
             }
             //lb_TongDoanhThu.Text = query;
             lb_TongDoanhThu.Text = tongsotien.ToString();

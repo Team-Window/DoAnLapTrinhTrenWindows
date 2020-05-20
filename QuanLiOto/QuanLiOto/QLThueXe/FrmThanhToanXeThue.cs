@@ -110,6 +110,7 @@ namespace QuanLiOto
 
         private void btn_TraXe_Click(object sender, EventArgs e)
         {
+           
             if (txb_SoTienPhaiTra.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng kiểm tra thanh toán đã đúng hay chưa trước khi thanh toán", "FrmThanhToanXeThue", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -132,6 +133,7 @@ namespace QuanLiOto
                 {
                     loaixe = "Xe hơi";
                 }
+                string loaihopdong = cb_loaihopdong.Text;
                 string bienso = txb_BienSo.Text;
                 MemoryStream pic = new MemoryStream();
                 DateTime ngayhd = dtp_NgayHopDong.Value;
@@ -142,7 +144,7 @@ namespace QuanLiOto
                 float sotienphaitra = (float)Convert.ToDouble(txb_SoTienPhaiTra.Text);
                 ptb_Anh.Image.Save(pic, ptb_Anh.Image.RawFormat);
                 int id = Convert.ToInt32(txb_ID.Text);
-                if (thanhtoanxethue.insertThanhToanXeThue(fname, lname, cmnd, loaixe, bienso, pic, ngayhd, trigiahd, ngaygiaoxe, ngayhethanthue, ngaytraxe, sotienphaitra) ==true && qlthue.deleteXeThue(id) == true)
+                if (thanhtoanxethue.insertThanhToanXeThue(fname, lname, cmnd, loaixe, bienso,loaihopdong, pic, ngayhd, trigiahd, ngaygiaoxe, ngayhethanthue, ngaytraxe, sotienphaitra) ==true && qlthue.deleteXeThue(id) == true)
                 {
                     MessageBox.Show("Thanh toán thành công", "FrmThanhToanXeThue", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

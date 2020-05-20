@@ -44,6 +44,11 @@ namespace QuanLiOto
                     FrmDanhChoNhanVien nhanvien = new FrmDanhChoNhanVien();
                     nhanvien.ShowDialog(this);
                 }
+                else if (table.Rows[0][6].ToString() == "Quản lí")
+                {
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show(this);
+                }
                 else
                 {
                     int userid = Convert.ToUInt16(table.Rows[0][0].ToString());

@@ -39,7 +39,15 @@ namespace QuanLiOto
                 loaixe = "Xe hơi";
             }
             string bienso = txb_BienSo.Text;
-            string giayphepxe = txb_GiayPhepXe.Text;
+            string loaihopdong;
+            if (cb_loaihopdong.SelectedIndex == 0)
+            {
+                loaihopdong = "Thuê";
+            }
+            else
+            {
+                loaihopdong = "Cho thuê";
+            }
             MemoryStream pic = new MemoryStream();
             DateTime ngayhd = dtp_NgayHopDong.Value;
             int trigiahd = Convert.ToInt32(txb_TriGiaHD.Text);
@@ -48,7 +56,7 @@ namespace QuanLiOto
             if(verif())
             {
                 ptb_Anh.Image.Save(pic, ptb_Anh.Image.RawFormat);
-                if (qlthue.insertXeThue(fname, lname, cmnd, loaixe, hieuxe, bienso, giayphepxe, pic, ngayhd, trigiahd, ngaygiaoxe, ngayhethanthue))
+                if (qlthue.insertXeThue(fname, lname, cmnd, loaixe, hieuxe, bienso, loaihopdong, pic, ngayhd, trigiahd, ngaygiaoxe, ngayhethanthue))
                 {
                     MessageBox.Show("Đã thêm thành công", "Xe Thuê Form", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -69,7 +77,7 @@ namespace QuanLiOto
             {
                 return false;
             }
-            else if ((cb_LoaiXe.SelectedIndex == 1 && txb_BienSo.Text.Trim() == "") || (cb_LoaiXe.SelectedIndex == 1 && txb_GiayPhepXe.Text.Trim() =="") || (cb_LoaiXe.SelectedIndex == 2 && txb_GiayPhepXe.Text.Trim() == "") ||(cb_LoaiXe.SelectedIndex == 2 && txb_BienSo.Text.Trim() == ""))
+            else if ((cb_LoaiXe.SelectedIndex == 1 && txb_BienSo.Text.Trim() == "") || (cb_LoaiXe.SelectedIndex == 1 && cb_loaihopdong.Text =="") || (cb_LoaiXe.SelectedIndex == 2 && cb_loaihopdong.Text == "") ||(cb_LoaiXe.SelectedIndex == 2 && txb_BienSo.Text.Trim() == ""))
             {
                 MessageBox.Show("Nếu là xe máy hoặc xe hơi thì phải nhập biển số và giấy phép xe");
                 return false;

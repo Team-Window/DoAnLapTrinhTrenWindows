@@ -47,3 +47,15 @@ D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmDanhChoNhanVien.resources
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.Log_in.resources
 D:\LapTrinhTrenWinDows\DoAnLapTrinhTrenWindows\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmCreateAccount.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmCreateAccount.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmDangKyLichLamViec.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmDanhChoNhanVien.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.Log_in.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmQLDSThue.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmThanhToanXeThue.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.FrmThemDSThue.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.QLThueXe.FrmCacXechothue.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.QLThueXe.MainFormThueXe.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.QLThueXe.FrmXecuaCongTy.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.QLThueXe.FrmQuanliXecuaCongTy.resources
+E:\GitHub\New folder\DoAnLapTrinhTrenWindows\QuanLiOto\QuanLiOto\obj\Debug\QuanLiOto.QLThueXe.FormThongKeXeChoThue.resources
