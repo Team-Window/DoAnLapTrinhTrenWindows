@@ -43,6 +43,7 @@ namespace QuanLiOto
             command.Parameters.Add("@lname", SqlDbType.VarChar).Value = lname;
             command.Parameters.Add("@uname", SqlDbType.VarChar).Value = uname;
             command.Parameters.Add("@password", SqlDbType.VarChar).Value = password;
+            command.Parameters.Add("@anh", SqlDbType.Image).Value = anh;
             command.Parameters.Add("@chucvu", SqlDbType.NVarChar).Value = chucvu;
 
             mydb.openConnection();
