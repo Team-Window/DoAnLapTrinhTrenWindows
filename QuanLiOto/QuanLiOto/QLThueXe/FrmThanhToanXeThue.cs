@@ -29,17 +29,17 @@ namespace QuanLiOto
         {
             float SoTien;
             //Thuê xe <= 1 tuần
-            if ((ngayhethanthue.Date - ngaygiaoxe.Date).TotalDays <= 7)
+            if ((ngayhethanthue - ngaygiaoxe).TotalDays <= 7)
             {
-                if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays == 0)
+                if ((ngayhethanthue - ngaytraxe).TotalDays == 0)
                 {
                     SoTien = trigiahopdong;
                 }
-                else if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays == 1) // lấy trước 1 ngày
+                else if ((ngayhethanthue - ngaytraxe).TotalDays == 1) // lấy trước 1 ngày
                 {
                     SoTien = (float)0.8 * trigiahopdong;
                 }
-                else if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays > 1 && (ngayhethanthue - ngaytraxe).TotalDays <= 3)
+                else if ((ngayhethanthue - ngaytraxe).TotalDays > 1 && (ngayhethanthue - ngaytraxe).TotalDays <= 3)
                 {
                     SoTien = (float)0.6 * trigiahopdong;
                 }
@@ -48,17 +48,17 @@ namespace QuanLiOto
                     SoTien = 0;
                 }
             }
-            else if ((ngayhethanthue.Date - ngaygiaoxe.Date).TotalDays <= 30) // Thuê xe 1 tháng
+            else if ((ngayhethanthue - ngaygiaoxe).TotalDays <= 30) // Thuê xe 1 tháng
             {
-                if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays == 0)
+                if ((ngayhethanthue - ngaytraxe).TotalDays == 0)
                 {
                     SoTien = trigiahopdong;
                 }
-                else if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays <= 3)
+                else if ((ngayhethanthue - ngaytraxe).TotalDays <= 3)
                 {
                     SoTien = (float)0.8 * trigiahopdong;
                 }
-                else if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays <= 7)
+                else if ((ngayhethanthue - ngaytraxe).TotalDays <= 7)
                 {
                     SoTien = (float)0.6 * trigiahopdong;
                 }
@@ -67,17 +67,17 @@ namespace QuanLiOto
                     SoTien = 0;
                 }
             }
-            else if (((ngayhethanthue.Date - ngaygiaoxe.Date).TotalDays <= 120)) // thuê 1 quý
+            else if (((ngayhethanthue - ngaygiaoxe).TotalDays <= 120)) // thuê 1 quý
             {
-                if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays == 0)
+                if ((ngayhethanthue - ngaytraxe).TotalDays == 0)
                 {
                     SoTien = trigiahopdong;
                 }
-                else if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays <= 7)
+                else if ((ngayhethanthue - ngaytraxe).TotalDays <= 7)
                 {
                     SoTien = (float)0.8 * trigiahopdong;
                 }
-                else if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays <= 15)
+                else if ((ngayhethanthue - ngaytraxe).TotalDays <= 15)
                 {
                     SoTien = (float)0.6 * trigiahopdong;
                 }
@@ -88,15 +88,15 @@ namespace QuanLiOto
             }
             else
             {
-                if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays == 0)
+                if ((ngayhethanthue - ngaytraxe).TotalDays == 0)
                 {
                     SoTien = trigiahopdong;
                 }
-                else if ((ngayhethanthue.Date - ngaytraxe.Date).TotalDays <= 15)
+                else if ((ngayhethanthue - ngaytraxe).TotalDays <= 15)
                 {
                     SoTien = (float)0.8 * trigiahopdong;
                 }
-                else if((ngayhethanthue.Date - ngaytraxe.Date).TotalDays <= 25)
+                else if((ngayhethanthue - ngaytraxe).TotalDays <= 25)
                 {
                     SoTien = (float)0.6 * trigiahopdong;
                 }

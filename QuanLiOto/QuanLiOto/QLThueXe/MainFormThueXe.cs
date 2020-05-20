@@ -20,37 +20,43 @@ namespace QuanLiOto.QLThueXe
         private void danhSáchCácXeChoThuêToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmCacXechothue frmCacXechothue = new FrmCacXechothue();
-            frmCacXechothue.Show(this);
+            frmCacXechothue.MdiParent = this;
+            frmCacXechothue.Show();
         }
 
         private void danhSáchHợpĐồngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmQLDSThue frmQLDSThue = new FrmQLDSThue();
-            frmQLDSThue.Show(this);
+            frmQLDSThue.MdiParent = this;
+            frmQLDSThue.Show();
         }
 
         private void tạoHợpĐồngMớiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmThemDSThue frmThemDSThue = new FrmThemDSThue();
-            frmThemDSThue.Show(this);
+            frmThemDSThue.MdiParent = this;
+            frmThemDSThue.Show();
         }
 
         private void thêmXeThuêCủaCôngTyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmXecuaCongTy frmXecuaCongTy = new FrmXecuaCongTy();
-            frmXecuaCongTy.Show(this);
+            frmXecuaCongTy.MdiParent = this;
+            frmXecuaCongTy.Show();
         }
 
         private void quảnLýCácXeCủaCôngTyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmQuanliXecuaCongTy frmQuanliXecuaCongTy = new FrmQuanliXecuaCongTy();
-            frmQuanliXecuaCongTy.Show(this);
+            frmQuanliXecuaCongTy.MdiParent = this;
+            frmQuanliXecuaCongTy.Show();
         }
 
         private void thốngKêDoanhThuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormThongKeXeChoThue formThongKeXeChoThue = new FormThongKeXeChoThue();
-            formThongKeXeChoThue.Show(this);
+            formThongKeXeChoThue.MdiParent = this;
+            formThongKeXeChoThue.Show();
         }
     }
 }
